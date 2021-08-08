@@ -1,0 +1,1 @@
+aws s3 sync public/ s3://2018simulator.roberttrad.com --delete --exclude "logs/*" --exclude "*.map"
