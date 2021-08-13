@@ -1,6 +1,12 @@
 <script lang="ts">
 	import Tailwind from "./Tailwind.svelte";
 
+	const districts = {
+		beirut1: 'Beirut 1',
+		beirut2: 'Beirut 2',
+	}
+
+	let selectedDistrictCode = 'beirut1';
 	let seats: number = 1;
 	let coalitions: Coalition[] = [];
 
@@ -63,7 +69,7 @@
 		coalitions = coalitions;
 	}
 
-	fetch("/samples/default.json")
+	$: fetch('/samples/' + selectedDistrictCode + '.json')
 		.then(response => response.json())
 		.then(json => {
 			seats = json['seats'];
@@ -86,6 +92,14 @@
 <Tailwind />
 
 <main class="flex flex-col items-center space-y-4">
+	<label>
+		District:
+		<select class="p-1" bind:value={selectedDistrictCode}>
+			{#each Object.keys(districts) as districtCode}
+			<option value={districtCode}>{districts[districtCode]}</option>
+			{/each}
+		</select>
+	</label>
 
 	<label>Seats <input type="number" class="w-20" bind:value={seats}></label>
 

@@ -1,0 +1,9 @@
+{
+  "seats": 8,
+  "coalitions": [
+    {
+      "name": "test1",
+      "votes": 1000
+    }
+  ]
+}

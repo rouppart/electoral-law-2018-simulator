@@ -1,0 +1,25 @@
+{
+  "seats": 8,
+  "coalitions": [
+    {
+      "name": "Beirut El Oula",
+      "votes": 16772
+    },
+    {
+      "name": "Nehna Beirut",
+      "votes": 1272
+    },
+    {
+      "name": "Koullouna Watani",
+      "votes": 6842
+    },
+    {
+      "name": "Beirut El Oula El Awiyye",
+      "votes": 18373
+    },
+    {
+      "name": "El Wafa la Beirut",
+      "votes": 94
+    }
+  ]
+}
