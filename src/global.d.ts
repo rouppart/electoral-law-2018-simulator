@@ -1,8 +1,36 @@
 /// <reference types="svelte" />
 
-interface Coalition {
+interface Group {
+  name: string
+  seats: number
+}
+
+interface Groups {
+  [key: string]: Group
+}
+
+interface Candidate {
   name: string
   votes: number
+  group: string
+}
+
+interface ProcessingCandidate extends Candidate {
+  coalitionIndex: number
+  excludedByQuota: boolean
+}
+
+interface ProcessedCandidate extends ProcessingCandidate {
+  win: boolean
+  lossByGroup: boolean
+  lossByCoalition: boolean
+}
+
+interface Coalition {
+  name: string
+  candidates: Candidate[];
+  votes: number
+  color: string
 }
 
 interface ProcessedCoalition extends Coalition {
@@ -15,4 +43,8 @@ interface ProcessedCoalition extends Coalition {
 
 interface EliminatedCoalition extends Coalition {
   eliminatingQuota: number
+}
+
+interface CountDict {
+  [key: string]: number
 }

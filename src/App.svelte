@@ -1,161 +1,347 @@
 <script lang="ts">
-	import Tailwind from "./Tailwind.svelte";
+  import Tailwind from "./Tailwind.svelte";
+  import CoalitionEditor from "./components/CoalitionEditor.svelte";
 
-	const districts = {
-		beirut1: 'Beirut 1',
-		beirut2: 'Beirut 2',
-	}
+  const districts = {
+    beirut1: 'Beirut 1',
+    beirut2: 'Beirut 2',
+    bekaa1: 'Bekaa 1',
+    bekaa2: 'Bekaa 2',
+    bekaa3: 'Bekaa 3'
+  }
 
-	let selectedDistrictCode = 'beirut1';
-	let seats: number = 1;
-	let coalitions: Coalition[] = [];
+  let selectedDistrictCode: string | null = null;
+  let groups: Groups = {};
+  let coalitions: Coalition[] = [];
+  let white: number = 0;
+  let editMode: boolean = false;
+  let showExcluded: boolean = false;
+  let groupCodeToAdd: string = '';
 
-	$: quotaPercent = Math.floor(100 / (seats + 1));
-	$: totalActualVotes = coalitions.reduce((pV, cE) => pV + cE.votes, 0);
+  function addCoalition() {
+    const newCoalition: Coalition = {name: '', candidates: [], votes: 0, color: ''};
+    coalitions = [...coalitions, newCoalition];
+  }
 
-	function calculateQuota(seats: number, votes: number) {
-		return Math.floor(votes / (seats + 1)) + 1;
-	}
+  function deleteCoalition(event: CustomEvent) {
+    coalitions.splice(event.detail, 1);
+    coalitions = coalitions;
+  }
 
-	$: initialQuota = calculateQuota(seats, totalActualVotes);
+  $: seats = Object.values(groups).reduce((pV, cE) => pV + cE.seats, 0);
+  $: quotaPercent = 100 / seats;
 
-	function processVotes(seats: number, coalitions: Coalition[]) {
-		let pCoals: ProcessedCoalition[] = coalitions.map(
-				(e, i) => {return {...e, index: i, countedVotes: e.votes, fullSeats: 0, remainderVotes: 0, partialSeat: 0}}
-		);
-		pCoals.sort((a, b) => a.votes - b.votes);
-		let totalCountedVotes = totalActualVotes;
-		let currentQuota = initialQuota;
-		const eliminatedCoalitions = [];
+  $: totalActualVotes = coalitions.reduce((pv, ce) => pv + ce.votes, 0) + white;
 
-		// Eliminate and calculate full Seats and Remainder
-		for (const pCoal of pCoals) {
-			if (pCoal.votes < currentQuota) {
-				pCoal.countedVotes = 0;
-				const eliminatedCoalition: EliminatedCoalition = {...pCoal, eliminatingQuota: currentQuota};
-				eliminatedCoalitions.push(eliminatedCoalition);
-				totalCountedVotes -= eliminatedCoalition.votes;
-				currentQuota = calculateQuota(seats, totalCountedVotes);
-			} else {
-				pCoal.fullSeats = Math.floor(pCoal.votes / currentQuota);
-				pCoal.remainderVotes = pCoal.votes - pCoal.fullSeats * currentQuota;
-			}
-		}
+  function calculateQuota(seats: number, votes: number) {
+    return votes / seats;
+  }
 
-		// Handle remainders
-		pCoals.sort((a, b) => b.remainderVotes - a.remainderVotes);
-		const partialSeats = seats - pCoals.reduce((pV, cE) => pV + cE.fullSeats, 0);
-		for (let i = 0; i < partialSeats && i < pCoals.length; i++) {
-			pCoals[i].partialSeat = 1;
-		}
+  $: initialQuota = calculateQuota(seats, totalActualVotes);
 
-		// Prepare for return
-		pCoals.sort((a, b) => a.index - b.index);
-		return {processedCoalitions: pCoals, eliminatedCoalitions, totalCountedVotes, endQuota: currentQuota};
-	}
-	$: processedElection = processVotes(seats, coalitions);
-	$: processedCoalitions = processedElection.processedCoalitions as ProcessedCoalition[];
-	$: eleminatedCoalitions = processedElection.eliminatedCoalitions as EliminatedCoalition[];
-	$: totalCountedVotes = processedElection.totalCountedVotes;
-	$: endQuota = processedElection.endQuota;
+  function processVotes(seats: number, coalitions: Coalition[]) {
+    let pCoals: ProcessedCoalition[] = coalitions.map(
+      (e, i) => {return {
+        name: e.name,
+        candidates: e.candidates,
+        votes: e.votes,
+        color: e.color,
+        index: i,
+        countedVotes: e.votes,
+        fullSeats: 0,
+        remainderVotes: 0,
+        partialSeat: 0
+      }}
+    );
+    pCoals.sort((a, b) => a.votes - b.votes);  // Todo: maybe remove all in one go
+    let totalCountedVotes = totalActualVotes;
+    let currentQuota = initialQuota;
+    const eliminatedCoalitions = [];
 
-	function addCoalition() {
-		const newCoalition: Coalition = {name: '', votes: 0};
-		coalitions = [...coalitions, newCoalition];
-	}
+    // Eliminate and calculate full Seats and Remainder
+    for (const pCoal of pCoals) {
+      if (pCoal.votes < currentQuota) {
+        pCoal.countedVotes = 0;
+        const eliminatedCoalition: EliminatedCoalition = {...pCoal, eliminatingQuota: currentQuota};
+        eliminatedCoalitions.push(eliminatedCoalition);
+        totalCountedVotes -= eliminatedCoalition.votes;
+        currentQuota = calculateQuota(seats, totalCountedVotes);
+      } else {
+        pCoal.fullSeats = Math.floor(pCoal.votes / currentQuota);
+        pCoal.remainderVotes = pCoal.votes - pCoal.fullSeats * currentQuota;
+      }
+    }
 
-	function deleteCoalition(index) {
-		coalitions.splice(index, 1);
-		coalitions = coalitions;
-	}
+    // Handle remainders
+    pCoals.sort((a, b) => b.remainderVotes - a.remainderVotes);
+    const partialSeats = seats - pCoals.reduce((pV, cE) => pV + cE.fullSeats, 0);
+    for (let i = 0; i < partialSeats && i < pCoals.length; i++) {
+      pCoals[i].partialSeat = 1;
+    }
 
-	$: fetch('/samples/' + selectedDistrictCode + '.json')
-		.then(response => response.json())
-		.then(json => {
-			seats = json['seats'];
-			coalitions = json['coalitions'];
-		})
+    // Prepare for return
+    pCoals.sort((a, b) => a.index - b.index);
+    return {processedCoalitions: pCoals, eliminatedCoalitions, totalCountedVotes, endQuota: currentQuota};
+  }
+  $: processedElection = processVotes(seats, coalitions);
+  $: processedCoalitions = processedElection.processedCoalitions as ProcessedCoalition[];
+  $: eleminatedCoalitions = processedElection.eliminatedCoalitions as EliminatedCoalition[];
+  $: totalCountedVotes = processedElection.totalCountedVotes;
+  $: endQuota = processedElection.endQuota;
+
+  function processCandidates(processedCoalitions: ProcessedCoalition[]): ProcessedCandidate[] {
+    const groupCount: CountDict = {};
+    for (let groupCode in groups) {
+      groupCount[groupCode] = groups[groupCode].seats
+    }
+
+    const coalitionCount: CountDict = {};
+    const candidates: ProcessingCandidate[] = [];
+    for (const pCoal of processedCoalitions) {
+      coalitionCount[pCoal.index] = pCoal.fullSeats + pCoal.partialSeat;
+      candidates.push(...pCoal.candidates.map(
+          (e) => {return {...e, coalitionIndex: pCoal.index, excludedByQuota: pCoal.countedVotes === 0}}
+        )
+      );
+    }
+    candidates.sort((a, b) => b.votes - a.votes);
+
+    let pCands: ProcessedCandidate[] = [];
+    for (let candidate of candidates) {
+      let lossByGoup = groupCount[candidate.group] <= 0;
+      let lossByCoalition = coalitionCount[candidate.coalitionIndex] <= 0;
+      let win = !lossByGoup && !lossByCoalition;
+      pCands.push({...candidate, lossByGroup: lossByGoup, lossByCoalition, win});
+      if (win) {
+        groupCount[candidate.group]--;
+        coalitionCount[candidate.coalitionIndex]--;
+      }
+    }
+    return pCands;
+  }
+  $: processedCandidates = processCandidates(processedCoalitions)
+
+  function processJson(json: object) {
+    groups = json['groups'];
+    coalitions = json['coalitions'];
+    white = json['white'];
+  }
+
+  async function loadDistrict(selectedDistrictCode) {
+    if (selectedDistrictCode === null) {
+      return;
+    }
+    const response = await fetch('/samples/' + selectedDistrictCode + '.json');
+    processJson(await response.json());
+  }
+  $: loadDistrict(selectedDistrictCode);
+
+  function downloadDataset() {
+    const dataset = {groups, coalitions, white};
+    const blob = new Blob([JSON.stringify(dataset, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'election_data.json';
+    a.click();
+    a.remove();
+  }
+
+  function uploadDataset(event: Event) {
+    const f = new FileReader()
+    f.onload = (event) => {
+      if (typeof event.target.result === 'string') {
+        const json = JSON.parse(event.target.result);
+        processJson(json);
+      }
+    };
+    f.readAsText(event.target.files[0]);
+  }
+
+  function format(n: number, digits: number = 3) {
+    return parseFloat(n.toFixed(digits)).toLocaleString();
+  }
 </script>
 
 <style lang="postcss">
-	.coalitiongrid {
-		display: grid;
-		grid-template-columns: repeat(8, auto);
-		align-items: center;
-	}
+    .header th {
+      @apply self-end tracking-tight;
+    }
 
-	.header {
-		@apply self-end font-bold tracking-tight;
-	}
+    .tableborder td, .tableborder th {
+      @apply border;
+    }
+
+    .section {
+      @apply text-xl font-bold pt-3;
+    }
 </style>
 
 <Tailwind />
 
-<main class="flex flex-col items-center space-y-4">
-	<label>
-		District:
-		<select class="p-1" bind:value={selectedDistrictCode}>
-			{#each Object.keys(districts) as districtCode}
-			<option value={districtCode}>{districts[districtCode]}</option>
-			{/each}
-		</select>
-	</label>
+<header class="sticky top-0 flex justify-around bg-gray-800 shadow-lg py-3">
+  <label>
+    <span class="font-bold text-white">District:</span>
+    <select class="p-1" bind:value={selectedDistrictCode}>
+      <option value={null}>Select District</option>
+      {#each Object.keys(districts) as districtCode}
+      <option value={districtCode}>{districts[districtCode]}</option>
+      {/each}
+    </select>
+  </label>
+  <button class="px-8" on:click={() => editMode = !editMode}>{editMode ? 'View' : 'Edit'}</button>
+  <button on:click={downloadDataset}>Download Dataset</button>
+  <label>
+    <span class="font-bold text-white">Upload Dataset:</span>
+    <input class="bg-white" type="file" on:change={uploadDataset} accept=".json">
+  </label>
 
-	<label>Seats <input type="number" class="w-20" bind:value={seats}></label>
+</header>
 
-	<div>
-		<b>Quota %:</b> {quotaPercent}
-	</div>
+<main class="flex flex-col items-center space-y-4 py-3 bg-white">
+  {#if Object.keys(groups).length === 0}
+  <h2 class="text-xl mt-6">Select District or Upload Dataset</h2>
+  {:else}
 
-	<div>
-		<b>Total Actual Votes:</b> {totalActualVotes}
-	</div>
+  {#if editMode}
+  <table>
+    <tr>
+      <th>Code</th>
+      <th>Group Name</th>
+      <th>Seats</th>
+      <th></th>
+    </tr>
+    {#each Object.keys(groups) as groupCode}
+      <tr>
+        <td>{groupCode}</td>
+        <td><input type="text" bind:value={groups[groupCode].name}></td>
+        <td><input type="number" class="w-16 text-right" bind:value={groups[groupCode].seats}></td>
+        <td><button class="deletebutton" on:click={() => {delete groups[groupCode]; groups = groups}}>X</button></td>
+      </tr>
+    {/each}
+    <tr>
+      <td>
+        <input class="w-20" type="text" bind:value={groupCodeToAdd}>
+      </td>
+      <td colspan="3">
+        <button on:click={() => {groups[groupCodeToAdd] = {name: '', seats: 1}; groupCodeToAdd = ''}}>Add Group</button>
+      </td>
+    </tr>
+  </table>
 
-	<div>
-		<b>Initial Quota:</b> {initialQuota}
-	</div>
+  <label class="font-bold">White Votes: <input type="number" class="w-24" bind:value={white}></label>
 
-	<div class="border-2 border-red-400 p-3 grid grid-cols-2 gap-3">
-		<span class="header">Eliminated Coalition</span>
-		<span class="header">Eliminating Quota</span>
-		{#each eleminatedCoalitions as eliminatedCoalition}
-		<span>{eliminatedCoalition.name}</span>
-		<span>{eliminatedCoalition.eliminatingQuota}</span>
-		{/each}
-	</div>
+  {#each coalitions as coalition, index}
+    <CoalitionEditor bind:coalition {groups} {index} on:deletecoalition={deleteCoalition}/>
+  {/each}
 
-	<div>
-		<b>Total Counted Votes:</b> {totalCountedVotes}
-	</div>
+  <div>
+    <button on:click={addCoalition} class="w-max">Add Coalition</button>
+  </div>
 
-	<div>
-		<b>End Quota:</b> {endQuota}
-	</div>
+  {:else}
 
-	<div class="coalitiongrid gap-3">
-		<span class="col-span-8 font-bold text-gray-500 text-right">V. = Votes; S. = Seats</span>
+  <div>
+    <b>Seats:</b> {seats}
+  </div>
 
-		<span class="header">Coalition Name</span>
-		<span class="header">Actual V.</span>
-		<span class="header">Counted V.</span>
-		<span class="header">Full S.</span>
-		<span class="header">Remainder V.</span>
-		<span class="header">Partial S.</span>
-		<span class="header">Total S.</span>
-		<span></span>
-		{#each processedCoalitions as pCoal}
-		<input type="text" bind:value={coalitions[pCoal.index].name}>
-		<input type="number" class="w-20" bind:value={coalitions[pCoal.index].votes}>
-		<span>{pCoal.countedVotes}</span>
-		<span class="font-bold">{pCoal.fullSeats}</span>
-		<span>{pCoal.remainderVotes}</span>
-		<span class="font-bold">{pCoal.partialSeat}</span>
-		<span class="font-bold text-green-600">{pCoal.fullSeats + pCoal.partialSeat}</span>
-		<button on:click={deleteCoalition.bind(null, pCoal.index)}>X</button>
-		{/each}
-		<div>
-			<button on:click={addCoalition} class="w-max">Add Coalition</button>
-		</div>
-	</div>
+  <div>
+    <b>Quota %:</b> {format(quotaPercent, 2)}
+  </div>
+
+
+  <div>
+    <b>Total Actual Votes:</b> {format(totalActualVotes)}
+  </div>
+
+  <div>
+    <b>White Votes:</b> {format(white)}
+  </div>
+
+  <div>
+    <b>Initial Quota:</b> {format(initialQuota)}
+  </div>
+
+  <table class="border-2 border-red-400">
+    <tr>
+      <th>Eliminated Coalition</th>
+      <th>Eliminating Quota</th>
+    </tr>
+    {#each eleminatedCoalitions as eliminatedCoalition}
+    <tr>
+      <td>{eliminatedCoalition.name}</td>
+      <td class="text-right">{format(eliminatedCoalition.eliminatingQuota)}</td>
+    </tr>
+    {/each}
+  </table>
+
+  <div>
+    <b>Eliminated Votes:</b> {format(totalActualVotes - totalCountedVotes)} ({format((totalActualVotes - totalCountedVotes) / totalActualVotes * 100, 0)} %)
+  </div>
+
+  <div>
+    <b>Total Counted Votes:</b> {format(totalCountedVotes)}
+  </div>
+
+  <div>
+    <b>End Quota:</b> {format(endQuota)}
+  </div>
+
+  <h2 class="section">Coalitions</h2>
+
+  <table class="tableborder">
+    <tr>
+      <td colspan="7" class="font-bold text-gray-500 text-right">V. = Votes; S. = Seats</td>
+    </tr>
+
+    <tr class="header">
+      <th class="text-left">Coalition Name</th>
+      <th>Actual V.</th>
+      <th>Counted V.</th>
+      <th>Full S.</th>
+      <th>Remainder V.</th>
+      <th>Partial S.</th>
+      <th>Total S.</th>
+    </tr>
+    {#each processedCoalitions as pCoal}
+      <tr>
+        <td><div class="w-3 h-3 inline-block mr-2" style="background-color: {pCoal.color}"></div>{coalitions[pCoal.index].name}</td>
+        <td class="text-right">{format(coalitions[pCoal.index].votes)}</td>
+        <td class="text-right" class:errortext={pCoal.countedVotes === 0}>{format(pCoal.countedVotes)}</td>
+        <td class="text-right font-bold">{pCoal.fullSeats}</td>
+        <td class="text-right">{format(pCoal.remainderVotes)}</td>
+        <td class="text-right font-bold">{pCoal.partialSeat}</td>
+        <td class="text-right font-bold text-green-600">{pCoal.fullSeats + pCoal.partialSeat}</td>
+      </tr>
+    {/each}
+  </table>
+
+  <h2 class="section">Candidates</h2>
+
+  <table class="tableborder">
+    <tr>
+      <th class="text-right">Group</th>
+      <th class="text-left">Candidate Name</th>
+      <th>Votes</th>
+      <th>Win</th>
+      <th>Loss By Coalition</th>
+      <th>Loss By Group</th>
+    </tr>
+    {#each processedCandidates as pCand}
+    {#if !pCand.excludedByQuota || showExcluded}
+    <tr class:bg-gray-100={pCand.excludedByQuota}>
+      <td class="text-right">{groups[pCand.group].name}</td>
+      <td><div class="w-3 h-3 inline-block mr-2" style="background-color: {coalitions[pCand.coalitionIndex].color}"></div>{pCand.name}</td>
+      <td class="text-right">{format(pCand.votes)}</td>
+      <td class="text-center text-green-600">{@html pCand.win ? '&check;' : ''}</td>
+      <td class="text-center font-bold text-red-500">{pCand.lossByCoalition ? 'X' : ''}</td>
+      <td class="text-center font-bold text-red-500">{pCand.lossByGroup ? 'X' : ''}</td>
+    </tr>
+    {/if}
+    {/each}
+  </table>
+  <button on:click={() => showExcluded = !showExcluded}>{showExcluded ? 'Hide' : 'Show'} Excluded Candidates</button>
+  {/if}
+
+  {/if}
 </main>
 

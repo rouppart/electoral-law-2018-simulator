@@ -1,0 +1,128 @@
+{
+  "groups": {
+    "go": {
+      "name": "Greek Orthodox",
+      "seats": 1
+    },
+    "ma": {
+      "name": "Maronite",
+      "seats": 1
+    },
+    "ms": {
+      "name": "Sunni",
+      "seats": 2
+    },
+    "mc": {
+      "name": "Shiite",
+      "seats": 1
+    },
+    "dz": {
+      "name": "Druze",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Moujtamaa Madani",
+      "votes": 1546,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Faysal Rahal",
+          "group": "ms",
+          "votes": 106
+        },
+        {
+          "name": "Ali Sobh",
+          "group": "mc",
+          "votes": 162
+        },
+        {
+          "name": "Joseph Ayoub",
+          "group": "go",
+          "votes": 150
+        },
+        {
+          "name": "Maguy Aoun",
+          "group": "ma",
+          "votes": 847
+        },
+        {
+          "name": "Alaa El Chemali",
+          "group": "ms",
+          "votes": 168
+        }
+      ]
+    },
+    {
+      "name": "Al Ghad El Afdal",
+      "votes": 32578,
+      "color": "navy",
+      "candidates": [
+        {
+          "name": "Abdel Rahim Mrad",
+          "group": "ms",
+          "votes": 15111
+        },
+        {
+          "name": "Mohammad Nasrallah",
+          "group": "mc",
+          "votes": 8897
+        },
+        {
+          "name": "Elie Ferzli",
+          "group": "go",
+          "votes": 4899
+        },
+        {
+          "name": "Faysal Daoud",
+          "group": "dz",
+          "votes": 2041
+        },
+        {
+          "name": "Naji Ghanem",
+          "group": "ma",
+          "votes": 838
+        }
+      ]
+    },
+    {
+      "name": "Al Mostaqbal Lil Bekaa El Gharbi Wa Rashaya",
+      "votes": 31817,
+      "color": "royalblue",
+      "candidates": [
+        {
+          "name": "Ziad El Kadri",
+          "group": "ms",
+          "votes": 8392
+        },
+        {
+          "name": "Wael Abou Faour",
+          "group": "dz",
+          "votes": 10677
+        },
+        {
+          "name": "Amin Wehbe",
+          "group": "mc",
+          "votes": 741
+        },
+        {
+          "name": "Henry Chedid",
+          "group": "ma",
+          "votes": 1584
+        },
+        {
+          "name": "Ghassan Skaff",
+          "group": "go",
+          "votes": 995
+        },
+        {
+          "name": "Mohammad El Qaraawi",
+          "votes": 8768,
+          "group": "ms"
+        }
+      ]
+    }
+  ],
+  "white": 541
+}

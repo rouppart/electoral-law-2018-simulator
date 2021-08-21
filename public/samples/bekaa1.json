@@ -1,0 +1,226 @@
+{
+  "groups": {
+    "ao": {
+      "name": "Armenian Orthodox",
+      "seats": 1
+    },
+    "gc": {
+      "name": "Greek Catholic",
+      "seats": 2
+    },
+    "go": {
+      "name": "Greek Orthodox",
+      "seats": 1
+    },
+    "ma": {
+      "name": "Maronite",
+      "seats": 1
+    },
+    "ms": {
+      "name": "Sunni",
+      "seats": 1
+    },
+    "mc": {
+      "name": "Shiite",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Zahle Qadiyetna",
+      "votes": 18702,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "George Oqays",
+          "group": "gc",
+          "votes": 11363
+        },
+        {
+          "name": "Kaysar Maalouf",
+          "group": "go",
+          "votes": 3554
+        },
+        {
+          "name": "Elie Marouni",
+          "group": "ma",
+          "votes": 1213
+        },
+        {
+          "name": "Michel Fattouch",
+          "group": "gc",
+          "votes": 552
+        },
+        {
+          "name": "Boghos Koridian",
+          "group": "ao",
+          "votes": 142
+        },
+        {
+          "name": "Mohammad Mita",
+          "group": "ms",
+          "votes": 1370
+        },
+        {
+          "name": "Amer El Sabouri",
+          "group": "mc",
+          "votes": 111
+        }
+      ]
+    },
+    {
+      "name": "Zahle La El Koll",
+      "votes": 36391,
+      "color": "blue",
+      "candidates": [
+        {
+          "name": "Michel Skaff",
+          "group": "gc",
+          "votes": 987
+        },
+        {
+          "name": "Michel Daher",
+          "group": "gc",
+          "votes": 9742
+        },
+        {
+          "name": "Asem Araji",
+          "group": "ms",
+          "votes": 7224
+        },
+        {
+          "name": "Selim Aoun",
+          "group": "ma",
+          "votes": 5567
+        },
+        {
+          "name": "Assad Nakad",
+          "group": "go",
+          "votes": 4138
+        },
+        {
+          "name": "Nizar Dalloul",
+          "votes": 3947,
+          "group": "mc"
+        },
+        {
+          "name": "Marie Bilazkajian",
+          "votes": 3851,
+          "group": "ao"
+        }
+      ]
+    },
+    {
+      "name": "Koullouna Watani",
+      "votes": 1599,
+      "color": "turquoise",
+      "candidates": [
+        {
+          "name": "Ghassan Maalouf",
+          "group": "gc",
+          "votes": 651
+        },
+        {
+          "name": "Hanna Habib",
+          "group": "ma",
+          "votes": 287
+        },
+        {
+          "name": "Vanda Chedid",
+          "group": "go",
+          "votes": 268
+        },
+        {
+          "name": "Hawad Taime",
+          "group": "ms",
+          "votes": 201
+        },
+        {
+          "name": "Mohammad Hassan",
+          "group": "mc",
+          "votes": 71
+        }
+      ]
+    },
+    {
+      "name": "Zahle El Khayar Wl Qarar",
+      "votes": 23546,
+      "color": "pink",
+      "candidates": [
+        {
+          "name": "Nicolas Fattouch",
+          "group": "gc",
+          "votes": 5737
+        },
+        {
+          "name": "Khalil Hraoui",
+          "group": "ma",
+          "votes": 343
+        },
+        {
+          "name": "Nasif El Tine",
+          "group": "go",
+          "votes": 528
+        },
+        {
+          "name": "Eddie Demerjian",
+          "group": "ao",
+          "votes": 77
+        },
+        {
+          "name": "Anwar Joumaa",
+          "group": "mc",
+          "votes": 15601
+        },
+        {
+          "name": "Wajih Araji",
+          "group": "ms",
+          "votes": 592
+        }
+      ]
+    },
+    {
+      "name": "El Ketle El Shaabiye",
+      "votes": 10885,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Myriam Tauk",
+          "group": "gc",
+          "votes": 6348
+        },
+        {
+          "name": "Nicolas Maalouf",
+          "group": "gc",
+          "votes": 95
+        },
+        {
+          "name": "Paul Charbel",
+          "group": "ma",
+          "votes": 824
+        },
+        {
+          "name": "Ahmad El Ajeimi",
+          "group": "ms",
+          "votes": 1008
+        },
+        {
+          "name": "Nicolas Saba",
+          "votes": 271,
+          "group": "go"
+        },
+        {
+          "name": "Ousama Salhab",
+          "votes": 172,
+          "group": "mc"
+        },
+        {
+          "name": "Kork Boushikian",
+          "votes": 1845,
+          "group": "ao"
+        }
+      ]
+    }
+  ],
+  "white": 545
+}

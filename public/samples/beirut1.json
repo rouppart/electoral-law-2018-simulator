@@ -1,25 +1,231 @@
 {
-  "seats": 8,
+  "groups": {
+    "ac": {
+      "name": "Armenian Catholic",
+      "seats": 1
+    },
+    "ao": {
+      "name": "Armenian Orthodox",
+      "seats": 3
+    },
+    "gc": {
+      "name": "Greek Catholic",
+      "seats": 1
+    },
+    "go": {
+      "name": "Greek Orthodox",
+      "seats": 1
+    },
+    "ma": {
+      "name": "Maronite",
+      "seats": 1
+    },
+    "mi": {
+      "name": "Minorities",
+      "seats": 1
+    }
+  },
   "coalitions": [
     {
       "name": "Beirut El Oula",
-      "votes": 16772
+      "votes": 16772,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Michel Pharaon",
+          "group": "gc",
+          "votes": 3214
+        },
+        {
+          "name": "Nadim Gemayel",
+          "group": "ma",
+          "votes": 4096
+        },
+        {
+          "name": "Imad Wakim",
+          "group": "go",
+          "votes": 3936
+        },
+        {
+          "name": "Riad Akel",
+          "group": "mi",
+          "votes": 428
+        },
+        {
+          "name": "Odis Daksian",
+          "group": "ao",
+          "votes": 437
+        },
+        {
+          "name": "Alina Clonsian",
+          "group": "ao",
+          "votes": 23
+        },
+        {
+          "name": "Carole Babikian",
+          "group": "ao",
+          "votes": 124
+        },
+        {
+          "name": "Jean Talousian",
+          "group": "ac",
+          "votes": 4166
+        }
+      ]
     },
     {
       "name": "Nehna Beirut",
-      "votes": 1272
+      "votes": 1272,
+      "color": "blue",
+      "candidates": [
+        {
+          "name": "Michelle Tueni",
+          "group": "go",
+          "votes": 428
+        },
+        {
+          "name": "Georges Sfeir",
+          "group": "ma",
+          "votes": 40
+        },
+        {
+          "name": "Rafic Bazerji",
+          "group": "mi",
+          "votes": 172
+        },
+        {
+          "name": "Serge Torskissian",
+          "group": "ac",
+          "votes": 43
+        },
+        {
+          "name": "Spiro Moukhjian",
+          "group": "ao",
+          "votes": 564
+        }
+      ]
     },
     {
       "name": "Koullouna Watani",
-      "votes": 6842
+      "votes": 6842,
+      "color": "turquoise",
+      "candidates": [
+        {
+          "name": "Lori Haytayan",
+          "group": "ao",
+          "votes": 218
+        },
+        {
+          "name": "Gilbert Doumit",
+          "group": "ma",
+          "votes": 1046
+        },
+        {
+          "name": "Joumana Haddad",
+          "group": "mi",
+          "votes": 431
+        },
+        {
+          "name": "Ziad Abas",
+          "group": "go",
+          "votes": 1525
+        },
+        {
+          "name": "Paula Yaacoubian",
+          "group": "ao",
+          "votes": 2500
+        },
+        {
+          "name": "Lucien Bou Rjeily",
+          "group": "gc",
+          "votes": 328
+        },
+        {
+          "name": "Levon Talfvsban",
+          "group": "ao",
+          "votes": 114
+        },
+        {
+          "name": "Yorgui Teyrouz",
+          "group": "ac",
+          "votes": 536
+        }
+      ]
     },
     {
       "name": "Beirut El Oula El Awiyye",
-      "votes": 18373
+      "votes": 18373,
+      "color": "orange",
+      "candidates": [
+        {
+          "name": "Nicolas Sehnaoui",
+          "group": "gc",
+          "votes": 4788
+        },
+        {
+          "name": "Hagop Terzian",
+          "group": "ao",
+          "votes": 3451
+        },
+        {
+          "name": "Serge Joekhadarian",
+          "group": "ac",
+          "votes": 717
+        },
+        {
+          "name": "Massoud Achkar",
+          "group": "ma",
+          "votes": 3762
+        },
+        {
+          "name": "Nicolas Chammas",
+          "group": "go",
+          "votes": 851
+        },
+        {
+          "name": "Antoun Bano",
+          "group": "mi",
+          "votes": 539
+        },
+        {
+          "name": "Alexandre Matossian",
+          "group": "ao",
+          "votes": 2376
+        },
+        {
+          "name": "Sebouh Kalbakian",
+          "group": "ao",
+          "votes": 1566
+        }
+      ]
     },
     {
-      "name": "El Wafa la Beirut",
-      "votes": 94
+      "name": "El Wafa2 la Beirut",
+      "votes": 94,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Jina El Chammas",
+          "group": "mi",
+          "votes": 31
+        },
+        {
+          "name": "Robert Abiad",
+          "group": "go",
+          "votes": 7
+        },
+        {
+          "name": "Roger Choueiri",
+          "group": "ma",
+          "votes": 25
+        },
+        {
+          "name": "Antoine Klayjiyan",
+          "group": "ac",
+          "votes": 20
+        }
+      ]
     }
-  ]
+  ],
+  "white": 313
 }

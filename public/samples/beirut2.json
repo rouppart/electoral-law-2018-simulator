@@ -1,9 +1,505 @@
 {
-  "seats": 8,
+  "groups": {
+    "ms": {
+      "name": "Sunni",
+      "seats": 6
+    },
+    "mc": {
+      "name": "Shiite",
+      "seats": 2
+    },
+    "dz": {
+      "name": "Druze",
+      "seats": 1
+    },
+    "go": {
+      "name": "Greek Orthodox",
+      "seats": 1
+    },
+    "ev": {
+      "name": "Evangelical",
+      "seats": 1
+    }
+  },
   "coalitions": [
     {
-      "name": "test1",
-      "votes": 1000
+      "name": "Lebnan Herzan",
+      "votes": 15773,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Fouad Makhzoumi",
+          "group": "ms",
+          "votes": 11346
+        },
+        {
+          "name": "Issam Barghout",
+          "group": "ms",
+          "votes": 164
+        },
+        {
+          "name": "Maarouf Itani",
+          "group": "ms",
+          "votes": 632
+        },
+        {
+          "name": "Mahmoud Kreidieh",
+          "group": "ms",
+          "votes": 62
+        },
+        {
+          "name": "Saadedine Khaled",
+          "group": "ms",
+          "votes": 572
+        },
+        {
+          "name": "Rana El Chamaytally",
+          "group": "ms",
+          "votes": 169
+        },
+        {
+          "name": "Youssef Baydoun",
+          "group": "mc",
+          "votes": 221
+        },
+        {
+          "name": "Zeina Mounzer",
+          "group": "dz",
+          "votes": 237
+        },
+        {
+          "name": "Khalil Bermana",
+          "group": "go",
+          "votes": 1369
+        },
+        {
+          "name": "Nadim Osta",
+          "group": "ev",
+          "votes": 169
+        }
+      ]
+    },
+    {
+      "name": "Sawt El Nass",
+      "votes": 1339,
+      "color": "gray",
+      "candidates": [
+        {
+          "name": "Ibrahim El Dallal",
+          "group": "ms",
+          "votes": 195
+        },
+        {
+          "name": "Hanan Osman",
+          "group": "ms",
+          "votes": 57
+        },
+        {
+          "name": "Roula El Houri",
+          "group": "ms",
+          "votes": 54
+        },
+        {
+          "name": "Faten Zein",
+          "group": "ms",
+          "votes": 30
+        },
+        {
+          "name": "Firas Mneimneh",
+          "group": "ms",
+          "votes": 40
+        },
+        {
+          "name": "Youssef El Tabesh",
+          "group": "ms",
+          "votes": 127
+        },
+        {
+          "name": "Neemat Badredine",
+          "group": "mc",
+          "votes": 153
+        },
+        {
+          "name": "Hani Fayad",
+          "group": "dz",
+          "votes": 90
+        },
+        {
+          "name": "Omar Wakim",
+          "group": "go",
+          "votes": 476
+        },
+        {
+          "name": "Nabil El Sebaaly",
+          "group": "ev",
+          "votes": 51
+        }
+      ]
+    },
+    {
+      "name": "Beirut El Watan",
+      "votes": 7475,
+      "color": "navy",
+      "candidates": [
+        {
+          "name": "Salahedine Salam",
+          "group": "ms",
+          "votes": 308
+        },
+        {
+          "name": "Mohammad Badr",
+          "group": "ms",
+          "votes": 854
+        },
+        {
+          "name": "Imad El Hout",
+          "group": "ms",
+          "votes": 3938
+        },
+        {
+          "name": "Bachar Kweytle",
+          "group": "ms",
+          "votes": 570
+        },
+        {
+          "name": "Saadedine El Wazan",
+          "group": "ms",
+          "votes": 321
+        },
+        {
+          "name": "Moustafa Bnoubak",
+          "group": "ms",
+          "votes": 699
+        },
+        {
+          "name": "Ibrahim Chamsedine",
+          "group": "mc",
+          "votes": 62
+        },
+        {
+          "name": "Salwa Khalil",
+          "group": "mc",
+          "votes": 31
+        },
+        {
+          "name": "Said Halabi",
+          "group": "dz",
+          "votes": 295
+        },
+        {
+          "name": "George Choucair",
+          "group": "go",
+          "votes": 175
+        },
+        {
+          "name": "Dalal El Rahbani",
+          "group": "ev",
+          "votes": 71
+        }
+      ]
+    },
+    {
+      "name": "Karamet Beirut",
+      "votes": 971,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Khaled Hamoud",
+          "group": "ms",
+          "votes": 90
+        },
+        {
+          "name": "Khouloud El Watar",
+          "group": "ms",
+          "votes": 24
+        },
+        {
+          "name": "Mohammad Chatila",
+          "group": "ms",
+          "votes": 227
+        },
+        {
+          "name": "Mohammad El Kadi",
+          "group": "ms",
+          "votes": 77
+        },
+        {
+          "name": "Jihad Matar",
+          "group": "ms",
+          "votes": 52
+        },
+        {
+          "name": "Hanan El Chaar",
+          "group": "ms",
+          "votes": 52
+        },
+        {
+          "name": "Raja El Zouhairi",
+          "group": "dz",
+          "votes": 223
+        },
+        {
+          "name": "Ali Sbeiti",
+          "group": "mc",
+          "votes": 53
+        },
+        {
+          "name": "Mikhael Mikhael",
+          "group": "go",
+          "votes": 123
+        }
+      ]
+    },
+    {
+      "name": "Wehdet Beirut",
+      "votes": 47087,
+      "color": "yellow",
+      "candidates": [
+        {
+          "name": "Adnan Traboulsi",
+          "group": "ms",
+          "votes": 13018
+        },
+        {
+          "name": "Omar Ghandour",
+          "group": "ms",
+          "votes": 329
+        },
+        {
+          "name": "Amin Chari",
+          "group": "mc",
+          "votes": 22961
+        },
+        {
+          "name": "Mohammad Khawaja",
+          "group": "mc",
+          "votes": 7834
+        },
+        {
+          "name": "Mohammad Baasiry",
+          "group": "ms",
+          "votes": 205
+        },
+        {
+          "name": "Edgard Traboulsi",
+          "group": "ev",
+          "votes": 1919
+        }
+      ]
+    },
+    {
+      "name": "El Mouarada El Beirutiye",
+      "votes": 553,
+      "color": "brown",
+      "candidates": [
+        {
+          "name": "Ziad Itani",
+          "group": "ms",
+          "votes": 263
+        },
+        {
+          "name": "Amer Scandarani",
+          "group": "ms",
+          "votes": 25
+        },
+        {
+          "name": "Akram Sinno",
+          "group": "ms",
+          "votes": 72
+        },
+        {
+          "name": "Bechara Khairallah",
+          "group": "go",
+          "votes": 34
+        },
+        {
+          "name": "Lina Hamdan",
+          "group": "mc",
+          "votes": 58
+        },
+        {
+          "name": "Zeina Mansour",
+          "group": "dz",
+          "votes": 15
+        },
+        {
+          "name": "Yassine Kadado",
+          "group": "ms",
+          "votes": 46
+        },
+        {
+          "name": "Safie Zaza",
+          "group": "ms",
+          "votes": 7
+        }
+      ]
+    },
+    {
+      "name": "El Moustakbal Li Beirut",
+      "votes": 62970,
+      "color": "royalblue",
+      "candidates": [
+        {
+          "name": "Roula Tabsh",
+          "group": "ms",
+          "votes": 6637
+        },
+        {
+          "name": "Ghazi Youssef",
+          "group": "mc",
+          "votes": 1759
+        },
+        {
+          "name": "Nazih Najem",
+          "group": "go",
+          "votes": 2351
+        },
+        {
+          "name": "Saad Hariri",
+          "group": "ms",
+          "votes": 20751
+        },
+        {
+          "name": "Tamam Salam",
+          "group": "ms",
+          "votes": 9599
+        },
+        {
+          "name": "Nohad Machnouk",
+          "group": "ms",
+          "votes": 6411
+        },
+        {
+          "name": "Bassem El Chab",
+          "group": "ev",
+          "votes": 735
+        },
+        {
+          "name": "Rabih Hassoune",
+          "group": "ms",
+          "votes": 5825
+        },
+        {
+          "name": "Ali El Chaer",
+          "group": "mc",
+          "votes": 2462
+        },
+        {
+          "name": "Zaher Eido",
+          "group": "ms",
+          "votes": 2510
+        },
+        {
+          "name": "Faysal El Sayegh",
+          "group": "dz",
+          "votes": 1902
+        }
+      ]
+    },
+    {
+      "name": "El Biyerte El Moustakillin",
+      "votes": 410,
+      "color": "fuchsia",
+      "candidates": [
+        {
+          "name": "Walid Chatila",
+          "group": "ms",
+          "votes": 44
+        },
+        {
+          "name": "Abed Itani",
+          "group": "ms",
+          "votes": 87
+        },
+        {
+          "name": "Abdel Rahman Ghalayini",
+          "group": "ms",
+          "votes": 20
+        },
+        {
+          "name": "Khaled Hankir",
+          "group": "ms",
+          "votes": 16
+        },
+        {
+          "name": "Khaled Moumtaz",
+          "group": "ms",
+          "votes": 108
+        },
+        {
+          "name": "Wissam Akoush",
+          "group": "mc",
+          "votes": 9
+        },
+        {
+          "name": "Jihad Hammoud",
+          "group": "mc",
+          "votes": 19
+        },
+        {
+          "name": "Leon Sioufi",
+          "group": "go",
+          "votes": 29
+        },
+        {
+          "name": "Andrea El Zouheiri",
+          "group": "dz",
+          "votes": 37
+        },
+        {
+          "name": "Fadi Zrazir",
+          "group": "ev",
+          "votes": 12
+        }
+      ]
+    },
+    {
+      "name": "Koulouna Beirut",
+      "votes": 6174,
+      "color": "turquoise",
+      "candidates": [
+        {
+          "name": "Ibrahim Mneimneh",
+          "group": "ms",
+          "votes": 1676
+        },
+        {
+          "name": "Nadine Itani",
+          "group": "ms",
+          "votes": 612
+        },
+        {
+          "name": "Hassan Sinno",
+          "group": "ms",
+          "votes": 1174
+        },
+        {
+          "name": "Fatme Meshref",
+          "group": "ms",
+          "votes": 433
+        },
+        {
+          "name": "Marwan El Taybe",
+          "group": "ms",
+          "votes": 112
+        },
+        {
+          "name": "Nohad Yazbek",
+          "group": "ev",
+          "votes": 633
+        },
+        {
+          "name": "Naji Kodeih",
+          "group": "mc",
+          "votes": 111
+        },
+        {
+          "name": "Zeina Majdalani",
+          "group": "go",
+          "votes": 1218
+        }
+      ]
     }
-  ]
+  ],
+  "white": 1077
 }
