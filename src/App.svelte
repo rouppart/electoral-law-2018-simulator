@@ -195,6 +195,10 @@
 </script>
 
 <style lang="postcss">
+  header * {
+    @apply my-1;
+  }
+
   .header th {
     @apply self-end tracking-tight;
   }
@@ -214,7 +218,7 @@
 
 <Tailwind />
 
-<header class="sticky top-0 flex flex-wrap md:flex-nowrap space-y-3 md:space-y-0 justify-around items-center bg-gray-800 shadow-lg py-3">
+<header class="sticky top-0 flex flex-wrap lg:flex-nowrap justify-around items-center bg-gray-800 shadow-lg py-1">
   <label>
     <span class="font-bold text-white">District:</span>
     <select class="p-1" bind:value={selectedDistrictCode}>
@@ -224,7 +228,7 @@
       {/each}
     </select>
   </label>
-  <button class="px-8" on:click={() => editMode = !editMode}>{editMode ? 'View' : 'Edit'}</button>
+  <button on:click={() => editMode = !editMode}>{editMode ? 'View Results' : 'Edit Dataset'}</button>
   <button on:click={downloadDataset}>Download Dataset</button>
   <label>
     <span class="font-bold text-white">Upload Dataset:</span>
@@ -298,7 +302,7 @@
     <b>Initial Quota:</b> {format(initialQuota)}
   </div>
 
-  <div class="border-2 border-red-400 p-4">
+  <div class="border-2 border-red-400 p-3">
     <h3 class="font-bold">Eliminated Coalitions</h3>
     {#each eleminatedCoalitions as eliminatedCoalition}
     <div>{eliminatedCoalition.name}</div>

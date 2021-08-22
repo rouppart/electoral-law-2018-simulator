@@ -27,7 +27,7 @@
   },
   "coalitions": [
     {
-      "name": "Beirut El Oula",
+      "name": "Beirut El 2oula",
       "votes": 16772,
       "color": "red",
       "candidates": [
@@ -153,7 +153,7 @@
       ]
     },
     {
-      "name": "Beirut El Oula El Awiyye",
+      "name": "Beirut El 2oula El 2awiyye",
       "votes": 18373,
       "color": "orange",
       "candidates": [
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "name": "El Wafa2 la Beirut",
+      "name": "El Wafa2 La Beirut",
       "votes": 94,
       "color": "green",
       "candidates": [
