@@ -5,6 +5,9 @@
 
   @layer base {
     body {
+      position: initial;
+      width: initial;
+      height: initial;
       @apply p-0;
     }
 

@@ -3,6 +3,7 @@
 interface Group {
   name: string
   seats: number
+  subdistrict?: string
 }
 
 interface Groups {
@@ -18,6 +19,7 @@ interface Candidate {
 interface ProcessingCandidate extends Candidate {
   coalitionIndex: number
   excludedByQuota: boolean
+  preferentialPercent: number
 }
 
 interface ProcessedCandidate extends ProcessingCandidate {
@@ -41,8 +43,10 @@ interface ProcessedCoalition extends Coalition {
   partialSeat: number
 }
 
-interface EliminatedCoalition extends Coalition {
-  eliminatingQuota: number
+interface Dataset {
+  groups: Groups
+  coalitions: Coalition[]
+  white: number
 }
 
 interface CountDict {

@@ -1,0 +1,468 @@
+{
+  "groups": {
+    "mms": {
+      "name": "Mina - Sunni",
+      "seats": 1,
+      "subdistrict": "Mina"
+    },
+    "dms": {
+      "name": "Denniye - Sunni",
+      "seats": 2,
+      "subdistrict": "Denniye"
+    },
+    "tms": {
+      "name": "Tripoli - Sunni",
+      "seats": 5,
+      "subdistrict": "Tripoli"
+    },
+    "tal": {
+      "name": "Tripoli - Alaouite",
+      "seats": 1,
+      "subdistrict": "Tripoli"
+    },
+    "tma": {
+      "name": "Tripoli - Maronite",
+      "seats": 1,
+      "subdistrict": "Tripoli"
+    },
+    "tgo": {
+      "name": "Tripoli - Greek Orthodox",
+      "seats": 1,
+      "subdistrict": "Tripoli"
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Al Azem",
+      "votes": 42019,
+      "color": "fuchsia",
+      "candidates": [
+        {
+          "name": "Najib Mikati",
+          "group": "tms",
+          "votes": 21300
+        },
+        {
+          "name": "Mohammad Sultan",
+          "group": "tms",
+          "votes": 281
+        },
+        {
+          "name": "Mohammad Jisr",
+          "group": "tms",
+          "votes": 1477
+        },
+        {
+          "name": "Rashid Moqaddam",
+          "group": "tms",
+          "votes": 746
+        },
+        {
+          "name": "Marfat El Hoz",
+          "group": "tms",
+          "votes": 452
+        },
+        {
+          "name": "Ali Darwish",
+          "votes": 2246,
+          "group": "tal"
+        },
+        {
+          "name": "Jean Obeid",
+          "votes": 1136,
+          "group": "tma"
+        },
+        {
+          "name": "Nicolas Nahhas",
+          "votes": 1057,
+          "group": "tgo"
+        },
+        {
+          "name": "Kazem Khayr",
+          "votes": 6754,
+          "group": "mms"
+        },
+        {
+          "name": "Mohammad Fadel",
+          "votes": 4006,
+          "group": "dms"
+        },
+        {
+          "name": "Jihad Youssef",
+          "votes": 131,
+          "group": "dms"
+        }
+      ]
+    },
+    {
+      "name": "Lebnan El Siyada",
+      "votes": 9656,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Ashraf Rifi",
+          "group": "tms",
+          "votes": 5931
+        },
+        {
+          "name": "Khaled Tadmari",
+          "group": "tms",
+          "votes": 199
+        },
+        {
+          "name": "Mohammad Kamaredine",
+          "group": "tms",
+          "votes": 249
+        },
+        {
+          "name": "Mohammad Salhab",
+          "group": "tms",
+          "votes": 269
+        },
+        {
+          "name": "Ali Ayoubi",
+          "group": "tms",
+          "votes": 609
+        },
+        {
+          "name": "Halim Zaani",
+          "votes": 43,
+          "group": "tma"
+        },
+        {
+          "name": "George Jallad",
+          "votes": 86,
+          "group": "tgo"
+        },
+        {
+          "name": "Badr Eid",
+          "votes": 277,
+          "group": "tal"
+        },
+        {
+          "name": "Ragheb Raad",
+          "votes": 537,
+          "group": "dms"
+        },
+        {
+          "name": "Ousama Amoun",
+          "votes": 644,
+          "group": "dms"
+        },
+        {
+          "name": "Walid El Masri",
+          "votes": 344,
+          "group": "mms"
+        }
+      ]
+    },
+    {
+      "name": "Al Karame El Wataniye",
+      "votes": 29101,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Faysal Omar Karami",
+          "group": "tms",
+          "votes": 7126
+        },
+        {
+          "name": "Taha Naji",
+          "group": "tms",
+          "votes": 4152
+        },
+        {
+          "name": "Mohammad Yakn",
+          "group": "tms",
+          "votes": 127
+        },
+        {
+          "name": "Abdel Nasser El Masri",
+          "group": "tms",
+          "votes": 215
+        },
+        {
+          "name": "Ayman Omar",
+          "votes": 99,
+          "group": "tms"
+        },
+        {
+          "name": "Ahmad Omran",
+          "votes": 2794,
+          "group": "tal"
+        },
+        {
+          "name": "Roufli Diab",
+          "votes": 1286,
+          "group": "tgo"
+        },
+        {
+          "name": "Jihad El Samad",
+          "votes": 11897,
+          "group": "dms"
+        },
+        {
+          "name": "Adel Zreiqa",
+          "votes": 494,
+          "group": "mms"
+        }
+      ]
+    },
+    {
+      "name": "Al Mostaqbal Li El Shmal",
+      "candidates": [
+        {
+          "name": "Dima El Jamali",
+          "votes": 2066,
+          "group": "tms"
+        },
+        {
+          "name": "George Bkassini",
+          "votes": 903,
+          "group": "tma"
+        },
+        {
+          "name": "Leila Chahoud",
+          "votes": 443,
+          "group": "tal"
+        },
+        {
+          "name": "Mohammad Kabara",
+          "votes": 9600,
+          "group": "tms"
+        },
+        {
+          "name": "Samir Jisr",
+          "votes": 9527,
+          "group": "tms"
+        },
+        {
+          "name": "Neeme Mahfoud",
+          "votes": 800,
+          "group": "tgo"
+        },
+        {
+          "name": "Chadi Nchabe",
+          "votes": 1135,
+          "group": "tms"
+        },
+        {
+          "name": "Walid El Sawalihi",
+          "votes": 994,
+          "group": "tms"
+        },
+        {
+          "name": "Kasem Aziz",
+          "votes": 6382,
+          "group": "dms"
+        },
+        {
+          "name": "Sami Fatfat",
+          "votes": 7943,
+          "group": "dms"
+        },
+        {
+          "name": "Osman Alamedine",
+          "votes": 10221,
+          "group": "mms"
+        }
+      ],
+      "votes": 51937,
+      "color": "royalblue"
+    },
+    {
+      "name": "Al Qarar El Mostaqel",
+      "candidates": [
+        {
+          "name": "Mohammad Ahdab",
+          "votes": 908,
+          "group": "tms"
+        },
+        {
+          "name": "Mounzeh Sawan",
+          "votes": 43,
+          "group": "tgo"
+        },
+        {
+          "name": "Wassim Alwan",
+          "votes": 2000,
+          "group": "tms"
+        },
+        {
+          "name": "Antoine Khalife",
+          "votes": 129,
+          "group": "tma"
+        },
+        {
+          "name": "Nariman Jamal",
+          "votes": 47,
+          "group": "tms"
+        },
+        {
+          "name": "Hisham Ibrahim",
+          "votes": 68,
+          "group": "tal"
+        },
+        {
+          "name": "Mohammad Ahmad",
+          "votes": 199,
+          "group": "mms"
+        },
+        {
+          "name": "Ali Samad",
+          "votes": 84,
+          "group": "dms"
+        },
+        {
+          "name": "Abdel Salam Trad",
+          "votes": 322,
+          "group": "dms"
+        }
+      ],
+      "votes": 4184,
+      "color": "gray"
+    },
+    {
+      "name": "Al Moujtamaa El Madani El Mostaqel",
+      "candidates": [
+        {
+          "name": "Jamal Badawi",
+          "votes": 258,
+          "group": "tms"
+        },
+        {
+          "name": "Hassan Khalil",
+          "votes": 47,
+          "group": "tal"
+        },
+        {
+          "name": "Hiba Naja",
+          "votes": 27,
+          "group": "tms"
+        },
+        {
+          "name": "Fadi El Jamal",
+          "votes": 32,
+          "group": "tgo"
+        },
+        {
+          "name": "Abdallah Rifai",
+          "votes": 13,
+          "group": "mms"
+        },
+        {
+          "name": "Ayman Jamal",
+          "votes": 18,
+          "group": "dms"
+        },
+        {
+          "name": "Samah Arja",
+          "votes": 5,
+          "group": "dms"
+        }
+      ],
+      "votes": 448,
+      "color": "yellow"
+    },
+    {
+      "name": "Qarar El Shaab",
+      "candidates": [
+        {
+          "name": "Kamal El Khayr",
+          "votes": 2182,
+          "group": "mms"
+        },
+        {
+          "name": "Ahmad Chandab",
+          "votes": 229,
+          "group": "dms"
+        },
+        {
+          "name": "Ali Harmoush",
+          "votes": 146,
+          "group": "dms"
+        },
+        {
+          "name": "Khaled Roumie",
+          "votes": 192,
+          "group": "tms"
+        },
+        {
+          "name": "Mahmoud Chehade",
+          "votes": 282,
+          "group": "tal"
+        },
+        {
+          "name": "Tony Marouni",
+          "votes": 675,
+          "group": "tma"
+        },
+        {
+          "name": "Nestas Koushari",
+          "votes": 52,
+          "group": "tgo"
+        }
+      ],
+      "votes": 4122,
+      "color": "orange"
+    },
+    {
+      "name": "Koullouna Watani",
+      "candidates": [
+        {
+          "name": "Mohammad Maaliki",
+          "votes": 131,
+          "group": "tms"
+        },
+        {
+          "name": "Wasek Mokadam",
+          "votes": 97,
+          "group": "tms"
+        },
+        {
+          "name": "Nariman Chamaa",
+          "votes": 111,
+          "group": "tms"
+        },
+        {
+          "name": "Malek Moulawi",
+          "votes": 299,
+          "group": "tms"
+        },
+        {
+          "name": "Yahya Mawloud",
+          "votes": 909,
+          "group": "tms"
+        },
+        {
+          "name": "Farah Issa",
+          "votes": 452,
+          "group": "tgo"
+        },
+        {
+          "name": "Moussa Khoury",
+          "votes": 106,
+          "group": "tma"
+        },
+        {
+          "name": "Zein Dib",
+          "votes": 36,
+          "group": "tal"
+        },
+        {
+          "name": "Ahmad Dhaibi",
+          "votes": 51,
+          "group": "mms"
+        },
+        {
+          "name": "Dani Osman",
+          "votes": 297,
+          "group": "dms"
+        }
+      ],
+      "votes": 2680,
+      "color": "turquoise"
+    }
+  ],
+  "white": 2272
+}

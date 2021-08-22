@@ -1,0 +1,101 @@
+{
+  "groups": {
+    "tmc": {
+      "name": "Sour - Shiite",
+      "seats": 4,
+      "subdistrict": "Sour"
+    },
+    "smc": {
+      "name": "Qora Saida - Shiite",
+      "seats": 2,
+      "subdistrict": "Qora Saida"
+    },
+    "sgo": {
+      "name": "Qora Saida - Greek Orthodox",
+      "seats": 1,
+      "subdistrict": "Qora Saida"
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Al Amal Wel Wafaa",
+      "votes": 134068,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Nabih Berri",
+          "group": "smc",
+          "votes": 42137
+        },
+        {
+          "name": "Ali Osseiran",
+          "group": "smc",
+          "votes": 2203
+        },
+        {
+          "name": "Michel Moussa",
+          "group": "sgo",
+          "votes": 4162
+        },
+        {
+          "name": "Nawaf Al Moussawi",
+          "group": "tmc",
+          "votes": 24379
+        },
+        {
+          "name": "Ali Khreis",
+          "group": "tmc",
+          "votes": 15672
+        },
+        {
+          "name": "Hussein Jashi",
+          "group": "tmc",
+          "votes": 23864
+        },
+        {
+          "name": "Anaya Ezzedine",
+          "group": "tmc",
+          "votes": 18815
+        }
+      ]
+    },
+    {
+      "name": "Maan Nahwa El Taghyir",
+      "votes": 11481,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Wissam El Hajj",
+          "group": "sgo",
+          "votes": 4729
+        },
+        {
+          "name": "Riad El Assaad",
+          "group": "smc",
+          "votes": 1620
+        },
+        {
+          "name": "Ahmad Mrouwe",
+          "group": "tmc",
+          "votes": 852
+        },
+        {
+          "name": "Lina El Husseini",
+          "group": "tmc",
+          "votes": 501
+        },
+        {
+          "name": "Abelnaser Fran",
+          "group": "tmc",
+          "votes": 1241
+        },
+        {
+          "name": "Raed Ataya",
+          "votes": 1382,
+          "group": "tmc"
+        }
+      ]
+    }
+  ],
+  "white": 1753
+}

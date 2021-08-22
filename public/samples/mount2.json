@@ -1,0 +1,233 @@
+{
+  "groups": {
+    "ma": {
+      "name": "Maronite",
+      "seats": 4
+    },
+    "go": {
+      "name": "Greek Orthodox",
+      "seats": 2
+    },
+    "gc": {
+      "name": "Greek Catholic",
+      "seats": 1
+    },
+    "ao": {
+      "name": "Armenian Orthodox",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "El Maten Qalb Lebnan",
+      "votes": 13138,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Majed Abillamaa",
+          "group": "ma",
+          "votes": 8922
+        },
+        {
+          "name": "Razi El Hajj",
+          "group": "ma",
+          "votes": 1018
+        },
+        {
+          "name": "Gizelle Hachem",
+          "group": "ma",
+          "votes": 185
+        },
+        {
+          "name": "Lina Moukhaiber",
+          "group": "go",
+          "votes": 178
+        },
+        {
+          "name": "Jessica Azar",
+          "group": "go",
+          "votes": 1030
+        },
+        {
+          "name": "Choucri Moukarzel",
+          "group": "ma",
+          "votes": 171
+        },
+        {
+          "name": "Ara Kouyounian",
+          "group": "ao",
+          "votes": 156
+        },
+        {
+          "name": "Michel Mecattaf",
+          "group": "gc",
+          "votes": 1212
+        }
+      ]
+    },
+    {
+      "name": "Koullouna Watani",
+      "votes": 5027,
+      "color": "turquoise",
+      "candidates": [
+        {
+          "name": "Emile Kanaan",
+          "group": "ma",
+          "votes": 457
+        },
+        {
+          "name": "Charbel Nahhas",
+          "group": "gc",
+          "votes": 2680
+        },
+        {
+          "name": "Nadine Moussa",
+          "group": "ma",
+          "votes": 394
+        },
+        {
+          "name": "Adib Tohme",
+          "group": "ma",
+          "votes": 326
+        },
+        {
+          "name": "Victoria Khoury",
+          "group": "ma",
+          "votes": 780
+        },
+        {
+          "name": "George Rahbani",
+          "votes": 175,
+          "group": "go"
+        }
+      ]
+    },
+    {
+      "name": "Al Metn El Qawi",
+      "votes": 38897,
+      "color": "orange",
+      "candidates": [
+        {
+          "name": "Ibrahim Kanaan",
+          "group": "ma",
+          "votes": 7179
+        },
+        {
+          "name": "Elias Bou Saab",
+          "group": "go",
+          "votes": 7299
+        },
+        {
+          "name": "Edgar Maalouf",
+          "group": "gc",
+          "votes": 5961
+        },
+        {
+          "name": "Hagop Pakradounian",
+          "group": "ao",
+          "votes": 7182
+        },
+        {
+          "name": "Ghassan El Ashkar",
+          "group": "ma",
+          "votes": 2757
+        },
+        {
+          "name": "Ghassan Moukhaiber",
+          "group": "go",
+          "votes": 2654
+        },
+        {
+          "name": "Sarkis Sarkis",
+          "group": "ma",
+          "votes": 4337
+        },
+        {
+          "name": "Korine El Ashkar",
+          "group": "ma",
+          "votes": 696
+        }
+      ]
+    },
+    {
+      "name": "El Wafaa El Matniya",
+      "votes": 13779,
+      "color": "navy",
+      "candidates": [
+        {
+          "name": "Michel El Murr",
+          "group": "go",
+          "votes": 11945
+        },
+        {
+          "name": "George Abboud",
+          "group": "gc",
+          "votes": 454
+        },
+        {
+          "name": "Najwa Azar",
+          "group": "ma",
+          "votes": 285
+        },
+        {
+          "name": "Miled Sebaali",
+          "group": "ma",
+          "votes": 446
+        },
+        {
+          "name": "Charbel Abou Jaoude",
+          "group": "ma",
+          "votes": 182
+        }
+      ]
+    },
+    {
+      "name": "Nabed El Matn",
+      "votes": 19003,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Sami Gemayel",
+          "group": "ma",
+          "votes": 13968
+        },
+        {
+          "name": "Elias Hankash",
+          "group": "ma",
+          "votes": 2583
+        },
+        {
+          "name": "Joseph Karam",
+          "group": "ma",
+          "votes": 580
+        },
+        {
+          "name": "Violette Ghazal",
+          "group": "go",
+          "votes": 178
+        },
+        {
+          "name": "Mazen Skaff",
+          "votes": 366,
+          "group": "go"
+        },
+        {
+          "name": "Mikhael Raqouz",
+          "votes": 532,
+          "group": "gc"
+        },
+        {
+          "name": "Nada Gharib",
+          "votes": 242,
+          "group": "ma"
+        },
+        {
+          "name": "Yaghisha Andonian",
+          "votes": 160,
+          "group": "ao"
+        }
+      ]
+    }
+  ],
+  "white": 558
+}

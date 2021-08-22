@@ -1,0 +1,245 @@
+{
+  "groups": {
+    "bma": {
+      "name": "Batroun - Maronite",
+      "seats": 2,
+      "subdistrict": "Batroun"
+    },
+    "rma": {
+      "name": "Bsharre - Maronite",
+      "seats": 2,
+      "subdistrict": "Bsharre"
+    },
+    "zma": {
+      "name": "Zgharta - Maronite",
+      "seats": 3,
+      "subdistrict": "Zgharta"
+    },
+    "kgo": {
+      "name": "Koura - Greek Orthodox",
+      "seats": 3,
+      "subdistrict": "Koura"
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Koullouna Watani",
+      "candidates": [
+        {
+          "name": "Riad Ghazale",
+          "votes": 293,
+          "group": "zma"
+        },
+        {
+          "name": "Antonia Ghamra",
+          "votes": 149,
+          "group": "zma"
+        },
+        {
+          "name": "Antoine Yammine",
+          "votes": 243,
+          "group": "zma"
+        },
+        {
+          "name": "Edmond Tauk",
+          "votes": 122,
+          "group": "rma"
+        },
+        {
+          "name": "Maurice Koura",
+          "votes": 73,
+          "group": "rma"
+        },
+        {
+          "name": "Bassam Ghantous",
+          "votes": 352,
+          "group": "kgo"
+        },
+        {
+          "name": "Fadwa Nasif",
+          "votes": 463,
+          "group": "kgo"
+        },
+        {
+          "name": "Layal Bou Moussa",
+          "votes": 952,
+          "group": "bma"
+        },
+        {
+          "name": "Antoun Harb",
+          "votes": 88,
+          "group": "bma"
+        }
+      ],
+      "votes": 3160,
+      "color": "turquoise"
+    },
+    {
+      "name": "Maan Li El Shamal Wa Loubnan",
+      "candidates": [
+        {
+          "name": "Salim Karam",
+          "votes": 1590,
+          "group": "zma"
+        },
+        {
+          "name": "Estephan Doueihi",
+          "votes": 5435,
+          "group": "zma"
+        },
+        {
+          "name": "Tony Franjiye",
+          "votes": 11407,
+          "group": "zma"
+        },
+        {
+          "name": "Roy Khoury",
+          "votes": 25,
+          "group": "rma"
+        },
+        {
+          "name": "Melhem Tauk",
+          "votes": 4649,
+          "group": "rma"
+        },
+        {
+          "name": "Abdallah Zakhem",
+          "votes": 779,
+          "group": "kgo"
+        },
+        {
+          "name": "Salim Saade",
+          "votes": 5263,
+          "group": "kgo"
+        },
+        {
+          "name": "Fayez Ghosn",
+          "votes": 4224,
+          "group": "kgo"
+        },
+        {
+          "name": "Boutros Harb",
+          "votes": 6155,
+          "group": "bma"
+        }
+      ],
+      "votes": 40788,
+      "color": "green"
+    },
+    {
+      "name": "Nabd El Joumhouriya El Qawiya",
+      "candidates": [
+        {
+          "name": "Strida Tauk",
+          "votes": 6677,
+          "group": "rma"
+        },
+        {
+          "name": "Joseph Eshak",
+          "votes": 5990,
+          "group": "rma"
+        },
+        {
+          "name": "Fadi Karam",
+          "votes": 7822,
+          "group": "kgo"
+        },
+        {
+          "name": "George Mansour",
+          "votes": 305,
+          "group": "kgo"
+        },
+        {
+          "name": "Albert Andraos",
+          "votes": 442,
+          "group": "kgo"
+        },
+        {
+          "name": "Samer Saade",
+          "votes": 2470,
+          "group": "bma"
+        },
+        {
+          "name": "Fadi Saad",
+          "votes": 9842,
+          "group": "bma"
+        },
+        {
+          "name": "Marios Beaini",
+          "votes": 2776,
+          "group": "zma"
+        },
+        {
+          "name": "Kaysar Mouawad",
+          "votes": 31,
+          "group": "zma"
+        },
+        {
+          "name": "Michel Doueihi",
+          "votes": 194,
+          "group": "zma"
+        }
+      ],
+      "votes": 37376,
+      "color": "red"
+    },
+    {
+      "name": "Al Shmal El Qawi",
+      "candidates": [
+        {
+          "name": "George Boutros",
+          "votes": 76,
+          "group": "rma"
+        },
+        {
+          "name": "Said Tauk",
+          "votes": 1112,
+          "group": "rma"
+        },
+        {
+          "name": "Neeme Ibrahim",
+          "votes": 118,
+          "group": "bma"
+        },
+        {
+          "name": "Gebran Bassil",
+          "votes": 12269,
+          "group": "bma"
+        },
+        {
+          "name": "Nicolas Ghosn",
+          "votes": 3190,
+          "group": "kgo"
+        },
+        {
+          "name": "Greta Saab",
+          "votes": 97,
+          "group": "kgo"
+        },
+        {
+          "name": "George Atallah",
+          "votes": 3383,
+          "group": "kgo"
+        },
+        {
+          "name": "Jawad Boulos",
+          "votes": 109,
+          "group": "zma"
+        },
+        {
+          "name": "Pierre Raffoul",
+          "votes": 3749,
+          "group": "zma"
+        },
+        {
+          "name": "Michel Mouawad",
+          "votes": 8571,
+          "group": "zma"
+        }
+      ],
+      "votes": 33342,
+      "color": "gray"
+    }
+  ],
+  "white": 1130
+}

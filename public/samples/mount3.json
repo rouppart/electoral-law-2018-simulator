@@ -1,0 +1,162 @@
+{
+  "groups": {
+    "ma": {
+      "name": "Maronite",
+      "seats": 3
+    },
+    "mc": {
+      "name": "Shiite",
+      "seats": 2
+    },
+    "dz": {
+      "name": "Druze",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Wehdet Enmaa Baabda",
+      "votes": 26500,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Pierre Bou Assi",
+          "group": "ma",
+          "votes": 13498
+        },
+        {
+          "name": "Hadi Abou El Hassan",
+          "group": "dz",
+          "votes": 11844
+        },
+        {
+          "name": "Salah El Harake",
+          "group": "mc",
+          "votes": 468
+        },
+        {
+          "name": "Cynthia Asmar",
+          "group": "ma",
+          "votes": 200
+        },
+        {
+          "name": "Joseph Adeimi",
+          "group": "ma",
+          "votes": 114
+        }
+      ]
+    },
+    {
+      "name": "Sawa Li Baabda",
+      "votes": 5768,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Elie Gharios",
+          "group": "ma",
+          "votes": 1912
+        },
+        {
+          "name": "Said Alameh",
+          "group": "mc",
+          "votes": 103
+        },
+        {
+          "name": "Alfat El Sabea",
+          "group": "mc",
+          "votes": 216
+        },
+        {
+          "name": "Ramzi Bou Khaled",
+          "group": "ma",
+          "votes": 2586
+        },
+        {
+          "name": "Ajouad El Ayache",
+          "group": "dz",
+          "votes": 77
+        },
+        {
+          "name": "Paul Abi Rached",
+          "votes": 726,
+          "group": "ma"
+        }
+      ]
+    },
+    {
+      "name": "Koullouna Watani",
+      "votes": 4992,
+      "color": "turquoise",
+      "candidates": [
+        {
+          "name": "Wasef El Harake",
+          "group": "mc",
+          "votes": 1308
+        },
+        {
+          "name": "Marie Claude El Helou",
+          "group": "ma",
+          "votes": 755
+        },
+        {
+          "name": "Ali Darwish",
+          "group": "mc",
+          "votes": 118
+        },
+        {
+          "name": "Ziad Akel",
+          "group": "ma",
+          "votes": 1192
+        },
+        {
+          "name": "Rania El Masri",
+          "group": "dz",
+          "votes": 958
+        },
+        {
+          "name": "Joseph Wanis",
+          "group": "ma",
+          "votes": 394
+        }
+      ]
+    },
+    {
+      "name": "El Wafaa El Watani",
+      "votes": 40669,
+      "color": "orange",
+      "candidates": [
+        {
+          "name": "Alain Aoun",
+          "group": "ma",
+          "votes": 10200
+        },
+        {
+          "name": "Ali Ammar",
+          "group": "mc",
+          "votes": 13692
+        },
+        {
+          "name": "Fadi Alame",
+          "group": "mc",
+          "votes": 6348
+        },
+        {
+          "name": "Naji Gharios",
+          "group": "ma",
+          "votes": 2916
+        },
+        {
+          "name": "Souheil Aawar",
+          "group": "dz",
+          "votes": 2257
+        },
+        {
+          "name": "Hikmat Dib",
+          "votes": 4428,
+          "group": "ma"
+        }
+      ]
+    }
+  ],
+  "white": 538
+}

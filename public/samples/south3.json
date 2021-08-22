@@ -1,0 +1,309 @@
+{
+  "groups": {
+    "bmc": {
+      "name": "Bint Jbeil - Shiite",
+      "seats": 3,
+      "subdistrict": "Bint Jbeil"
+    },
+    "nmc": {
+      "name": "Nabatieh - Shiite",
+      "seats": 3,
+      "subdistrict": "Nabatieh"
+    },
+    "mmc": {
+      "name": "Marjaayoun - Shiite",
+      "seats": 2,
+      "subdistrict": "Marjaayoun"
+    },
+    "mdz": {
+      "name": "Marjaayoun - Druze",
+      "seats": 1,
+      "subdistrict": "Marjaayoun"
+    },
+    "mms": {
+      "name": "Marjaayoun - Sunni",
+      "seats": 1,
+      "subdistrict": "Marjaayoun"
+    },
+    "mgo": {
+      "name": "Marjaayoun - Greek Orthodox",
+      "seats": 1,
+      "subdistrict": "Marjaayoun"
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Al Amal Wel Wafaa",
+      "votes": 193224,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Mohammad Raad",
+          "group": "nmc",
+          "votes": 43797
+        },
+        {
+          "name": "Hani Kobeissi",
+          "group": "nmc",
+          "votes": 20504
+        },
+        {
+          "name": "Yassine Jabel",
+          "group": "nmc",
+          "votes": 7920
+        },
+        {
+          "name": "Ali Khalil",
+          "group": "mmc",
+          "votes": 16765
+        },
+        {
+          "name": "Ali Fayad",
+          "group": "mmc",
+          "votes": 27460
+        },
+        {
+          "name": "Kasem Hachem",
+          "group": "mms",
+          "votes": 6012
+        },
+        {
+          "name": "Anwar El Khalil",
+          "group": "mdz",
+          "votes": 6347
+        },
+        {
+          "name": "Assaad Hardan",
+          "votes": 3321,
+          "group": "mgo"
+        },
+        {
+          "name": "Hassan Fadlallah",
+          "votes": 39722,
+          "group": "bmc"
+        },
+        {
+          "name": "Ayoub Homayyed",
+          "votes": 7875,
+          "group": "bmc"
+        },
+        {
+          "name": "Ali Bazzi",
+          "votes": 9290,
+          "group": "bmc"
+        }
+      ]
+    },
+    {
+      "name": "Fina Nghayyir",
+      "votes": 659,
+      "color": "navy",
+      "candidates": [
+        {
+          "name": "Ahmad El Assaad",
+          "group": "nmc",
+          "votes": 165
+        },
+        {
+          "name": "Rabah Haidar",
+          "group": "mmc",
+          "votes": 7
+        },
+        {
+          "name": "Abir Ramadan",
+          "group": "mmc",
+          "votes": 93
+        },
+        {
+          "name": "Adnan El Khatib",
+          "group": "mms",
+          "votes": 30
+        },
+        {
+          "name": "Manah Saab",
+          "group": "mgo",
+          "votes": 60
+        },
+        {
+          "name": "Kanj Alamedine",
+          "votes": 5,
+          "group": "mdz"
+        },
+        {
+          "name": "Mohammad Faraj",
+          "votes": 69,
+          "group": "bmc"
+        },
+        {
+          "name": "Abdallah Al Selman",
+          "votes": 17,
+          "group": "bmc"
+        }
+      ]
+    },
+    {
+      "name": "Al Jounoub Yastahiq",
+      "candidates": [
+        {
+          "name": "Hisham Jaber",
+          "votes": 162,
+          "group": "nmc"
+        },
+        {
+          "name": "Moustapha Badredine",
+          "votes": 1454,
+          "group": "nmc"
+        },
+        {
+          "name": "Nadim Osseiran",
+          "votes": 398,
+          "group": "nmc"
+        },
+        {
+          "name": "Abbas Charafeddine",
+          "votes": 79,
+          "group": "mmc"
+        },
+        {
+          "name": "Merhef Ramadan",
+          "votes": 67,
+          "group": "mmc"
+        },
+        {
+          "name": "Chadi Massaad",
+          "votes": 1671,
+          "group": "mgo"
+        },
+        {
+          "name": "Wissam Charouf",
+          "votes": 2512,
+          "group": "mdz"
+        },
+        {
+          "name": "Mohammad Kadouh",
+          "votes": 586,
+          "group": "bmc"
+        },
+        {
+          "name": "Hussein Chaer",
+          "votes": 1020,
+          "group": "bmc"
+        },
+        {
+          "name": "Imad El Khatib",
+          "votes": 8543,
+          "group": "mms"
+        }
+      ],
+      "votes": 17058,
+      "color": "fuchsia"
+    },
+    {
+      "name": "Sawt Wahad Liltaghyir",
+      "candidates": [
+        {
+          "name": "Ahmad Mrad",
+          "votes": 1044,
+          "group": "bmc"
+        },
+        {
+          "name": "Hussein Baydoun",
+          "votes": 112,
+          "group": "bmc"
+        },
+        {
+          "name": "Abbas Srour",
+          "votes": 149,
+          "group": "bmc"
+        },
+        {
+          "name": "Ali Hajj Ali",
+          "votes": 2541,
+          "group": "nmc"
+        },
+        {
+          "name": "Said Issa",
+          "votes": 187,
+          "group": "mms"
+        },
+        {
+          "name": "Ghassan Hadife",
+          "votes": 97,
+          "group": "mdz"
+        },
+        {
+          "name": "Hala Abou Kasm",
+          "votes": 1593,
+          "group": "mgo"
+        }
+      ],
+      "votes": 5895,
+      "color": "orange"
+    },
+    {
+      "name": "Shbeana Haki",
+      "candidates": [
+        {
+          "name": "Rami Aleiq",
+          "votes": 153,
+          "group": "nmc"
+        },
+        {
+          "name": "Ahmad Ismail",
+          "votes": 177,
+          "group": "nmc"
+        },
+        {
+          "name": "Imad Qamiha",
+          "votes": 39,
+          "group": "mmc"
+        },
+        {
+          "name": "Fadi Salame",
+          "votes": 2435,
+          "group": "mgo"
+        },
+        {
+          "name": "Ali El Amin",
+          "votes": 1630,
+          "group": "bmc"
+        }
+      ],
+      "votes": 4710,
+      "color": "red"
+    },
+    {
+      "name": "Koullouna Watani",
+      "candidates": [
+        {
+          "name": "Jamil Blot",
+          "votes": 680,
+          "group": "nmc"
+        },
+        {
+          "name": "Salah Nouredine",
+          "votes": 71,
+          "group": "bmc"
+        },
+        {
+          "name": "Rima Hamid",
+          "votes": 471,
+          "group": "bmc"
+        },
+        {
+          "name": "Akram Qays",
+          "votes": 166,
+          "group": "mdz"
+        },
+        {
+          "name": "Fadi Abou Jamra",
+          "votes": 615,
+          "group": "mgo"
+        }
+      ],
+      "votes": 2262,
+      "color": "turquoise"
+    }
+  ],
+  "white": 1980
+}

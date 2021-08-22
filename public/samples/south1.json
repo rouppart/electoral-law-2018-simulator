@@ -1,0 +1,135 @@
+{
+  "groups": {
+    "jma": {
+      "name": "Jezzine - Maronite",
+      "seats": 2,
+      "subdistrict": "Jezzine"
+    },
+    "jgc": {
+      "name": "Jezzine - Greek Catholic",
+      "seats": 1,
+      "subdistrict": "Jezzine"
+    },
+    "sms": {
+      "name": "Saida - Sunni",
+      "seats": 2,
+      "subdistrict": "Saida"
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Likol El Nas",
+      "candidates": [
+        {
+          "name": "Oussama Saad El Masri",
+          "votes": 9880,
+          "group": "sms"
+        },
+        {
+          "name": "Abed Bsat",
+          "votes": 36,
+          "group": "sms"
+        },
+        {
+          "name": "Ibrahim Azar",
+          "votes": 11663,
+          "group": "jma"
+        },
+        {
+          "name": "Youssef Skaff",
+          "votes": 31,
+          "group": "jgc"
+        }
+      ],
+      "votes": 22083,
+      "color": "red"
+    },
+    {
+      "name": "Saida W Jezzine Maan",
+      "candidates": [
+        {
+          "name": "Abdelrahman Bezri",
+          "votes": 3509,
+          "group": "sms"
+        },
+        {
+          "name": "Bassam Hammoud",
+          "votes": 3204,
+          "group": "sms"
+        },
+        {
+          "name": "Ziad Assouad",
+          "votes": 7270,
+          "group": "jma"
+        },
+        {
+          "name": "Amal Abou Zeid",
+          "votes": 5016,
+          "group": "jma"
+        },
+        {
+          "name": "Salim Khoury",
+          "votes": 708,
+          "group": "jgc"
+        }
+      ],
+      "votes": 20127,
+      "color": "fuchsia"
+    },
+    {
+      "name": "Qodrit El Taghyir",
+      "candidates": [
+        {
+          "name": "Joseph Nohra",
+          "votes": 472,
+          "group": "jma"
+        },
+        {
+          "name": "Ajaj Haddad",
+          "votes": 4394,
+          "group": "jgc"
+        },
+        {
+          "name": "Samir Bezri",
+          "votes": 1198,
+          "group": "sms"
+        }
+      ],
+      "votes": 6238,
+      "color": "navy"
+    },
+    {
+      "name": "Al Takamol Wel Karame",
+      "candidates": [
+        {
+          "name": "Bahia Hariri",
+          "votes": 13739,
+          "group": "sms"
+        },
+        {
+          "name": "Hassan Chamsedine",
+          "votes": 1026,
+          "group": "sms"
+        },
+        {
+          "name": "Amin Rizk",
+          "votes": 632,
+          "group": "sms"
+        },
+        {
+          "name": "Robert Khoury",
+          "votes": 449,
+          "group": "jgc"
+        },
+        {
+          "name": "Angel Khound",
+          "votes": 36,
+          "group": "jma"
+        }
+      ],
+      "votes": 16470,
+      "color": "royalblue"
+    }
+  ],
+  "white": 820
+}

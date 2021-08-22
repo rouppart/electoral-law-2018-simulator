@@ -1,0 +1,250 @@
+{
+  "groups": {
+    "ms": {
+      "name": "Sunni",
+      "seats": 3
+    },
+    "ma": {
+      "name": "Maronite",
+      "seats": 1
+    },
+    "al": {
+      "name": "Alaouite",
+      "seats": 1
+    },
+    "go": {
+      "name": "Greek Orthodox",
+      "seats": 2
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Nisaa Akar",
+      "votes": 498,
+      "color": "fuchsia",
+      "candidates": [
+        {
+          "name": "Roula Mrad",
+          "group": "ms",
+          "votes": 119
+        },
+        {
+          "name": "Marie Khoury",
+          "group": "ma",
+          "votes": 46
+        },
+        {
+          "name": "Nidal Skaff",
+          "group": "go",
+          "votes": 158
+        },
+        {
+          "name": "Soad Salah",
+          "group": "ms",
+          "votes": 36
+        },
+        {
+          "name": "Golay El Assaad",
+          "group": "ms",
+          "votes": 75
+        }
+      ]
+    },
+    {
+      "name": "Lebnan El Siyada",
+      "votes": 4713,
+      "color": "brown",
+      "candidates": [
+        {
+          "name": "Ahmad Jawhar",
+          "group": "ms",
+          "votes": 1059
+        },
+        {
+          "name": "Badr Ismail",
+          "group": "ms",
+          "votes": 380
+        },
+        {
+          "name": "Ibrahim Merheb",
+          "group": "ms",
+          "votes": 539
+        },
+        {
+          "name": "Elie Saad",
+          "group": "go",
+          "votes": 1037
+        },
+        {
+          "name": "Joseph Wehbe",
+          "group": "go",
+          "votes": 730
+        },
+        {
+          "name": "Ziad Bitar",
+          "votes": 442,
+          "group": "ma"
+        },
+        {
+          "name": "Mohammad Rustom",
+          "votes": 393,
+          "group": "al"
+        }
+      ]
+    },
+    {
+      "name": "Qarar Akar",
+      "votes": 2032,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Ali Amar",
+          "group": "ms",
+          "votes": 347
+        },
+        {
+          "name": "Kamal Khazaal",
+          "group": "ms",
+          "votes": 140
+        },
+        {
+          "name": "Basem Khaled",
+          "group": "ms",
+          "votes": 369
+        },
+        {
+          "name": "George Nader",
+          "group": "ma",
+          "votes": 38
+        }
+      ]
+    },
+    {
+      "name": "Al Qarar Li Akar",
+      "votes": 14449,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Wajih Baarini",
+          "group": "ms",
+          "votes": 665
+        },
+        {
+          "name": "Mikhael Daher",
+          "group": "ma",
+          "votes": 653
+        },
+        {
+          "name": "Karim El Rassi",
+          "group": "go",
+          "votes": 2590
+        },
+        {
+          "name": "Adnan Merheb",
+          "group": "ms",
+          "votes": 551
+        },
+        {
+          "name": "Hussein Masri",
+          "group": "ms",
+          "votes": 518
+        },
+        {
+          "name": "Emile Abdo",
+          "votes": 4915,
+          "group": "go"
+        },
+        {
+          "name": "Hussein Saloum",
+          "votes": 4245,
+          "group": "al"
+        }
+      ]
+    },
+    {
+      "name": "Al Mostaqbal Li Akar",
+      "candidates": [
+        {
+          "name": "Mohammad El Merhebi",
+          "votes": 14145,
+          "group": "ms"
+        },
+        {
+          "name": "Mohammad Sleiman",
+          "votes": 14911,
+          "group": "ms"
+        },
+        {
+          "name": "Walid Baarini",
+          "votes": 20426,
+          "group": "ms"
+        },
+        {
+          "name": "Wehbe Katishe",
+          "votes": 7911,
+          "group": "go"
+        },
+        {
+          "name": "Jean Moussa",
+          "votes": 3759,
+          "group": "go"
+        },
+        {
+          "name": "Khodr Habib",
+          "votes": 561,
+          "group": "al"
+        },
+        {
+          "name": "Hadi Hobeich",
+          "votes": 13055,
+          "group": "ma"
+        }
+      ],
+      "votes": 76452,
+      "color": "royalblue"
+    },
+    {
+      "name": "Akar El Qawiye",
+      "candidates": [
+        {
+          "name": "Mohammad Yahya",
+          "votes": 8144,
+          "group": "ms"
+        },
+        {
+          "name": "Mohammad Chedid",
+          "votes": 5277,
+          "group": "ms"
+        },
+        {
+          "name": "Mahmoud Hadara",
+          "votes": 1628,
+          "group": "ms"
+        },
+        {
+          "name": "Assaad Dergham",
+          "votes": 7435,
+          "group": "go"
+        },
+        {
+          "name": "Riad Rahal",
+          "votes": 1304,
+          "group": "go"
+        },
+        {
+          "name": "Jimmy Jabbour",
+          "votes": 8667,
+          "group": "ma"
+        },
+        {
+          "name": "Moustapha Hussein",
+          "votes": 1353,
+          "group": "al"
+        }
+      ],
+      "votes": 34430,
+      "color": "orange"
+    }
+  ],
+  "white": 838
+}
