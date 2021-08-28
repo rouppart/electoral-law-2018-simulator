@@ -20,9 +20,12 @@
     south3: 'South 3'
   }
 
+  // Main Data
   let groups: Groups = {};
   let coalitions: Coalition[] = [];
   let white: number = 0;
+
+  // Controls
   let selectedDistrictCode: string | null = null;
   let editMode: boolean = false;
   let showExcluded: boolean = false;
@@ -49,9 +52,14 @@
 
   $: initialQuota = calculateQuota(seats, totalActualVotes);
 
-  function processVotes(seats: number, coalitions: Coalition[]) {
+  // Process Coalitions
+  let processedCoalitions: ProcessedCoalition[];
+  let eliminatedCoalitions: Coalition[];
+  let totalCountedVotes: number;
+  let endQuota: number;
+  $: {
     // Initialize Processed Coalitions
-    let pCoals: ProcessedCoalition[] = coalitions.map(
+    processedCoalitions = coalitions.map(
       (e, i) => {return {
         name: e.name,
         candidates: e.candidates,
@@ -64,47 +72,46 @@
         partialSeat: 0
       }}
     );
+    eliminatedCoalitions = [];
+    totalCountedVotes = totalActualVotes;
+    endQuota = initialQuota;
 
     // Eliminate and calculate full Seats and Remainder
-    let totalCountedVotes = totalActualVotes;
-    let currentQuota = initialQuota;
-    const eliminatedCoalitions = [];
-
-    pCoals.sort((a, b) => a.votes - b.votes);
-    for (const pCoal of pCoals) {
+    processedCoalitions.sort((a, b) => a.votes - b.votes);
+    for (const pCoal of processedCoalitions) {
       if (pCoal.votes < initialQuota) {
         totalCountedVotes -= pCoal.votes;
         pCoal.countedVotes = 0;
-        eliminatedCoalitions.push(pCoal);
-        currentQuota = calculateQuota(seats, totalCountedVotes);
+        eliminatedCoalitions = [...eliminatedCoalitions, pCoal];
+        endQuota = calculateQuota(seats, totalCountedVotes);
       } else {  // Since pCoals is sorted by votes, this will apply after all eliminations
-        pCoal.fullSeats = Math.floor(pCoal.votes / currentQuota);
-        pCoal.remainderVotes = pCoal.votes - pCoal.fullSeats * currentQuota;
+        pCoal.fullSeats = Math.floor(pCoal.votes / endQuota);
+        pCoal.remainderVotes = pCoal.votes - pCoal.fullSeats * endQuota;
       }
     }
 
     // Handle remainders
-    pCoals.sort((a, b) => b.remainderVotes - a.remainderVotes); // Sort by remainder
-    const partialSeats = seats - pCoals.reduce((pV, cE) => pV + cE.fullSeats, 0);
-    for (let i = 0; i < partialSeats && i < pCoals.length; i++) {
-      pCoals[i].partialSeat = 1;
+    processedCoalitions.sort((a, b) => b.remainderVotes - a.remainderVotes); // Sort by remainder
+    const partialSeats = seats - processedCoalitions.reduce((pV, cE) => pV + cE.fullSeats, 0);
+    for (let i = 0; i < partialSeats && i < processedCoalitions.length; i++) {
+      processedCoalitions[i].partialSeat = 1;
     }
 
     // Prepare for return
-    pCoals.sort((a, b) => a.index - b.index);
-    return {processedCoalitions: pCoals, eliminatedCoalitions, totalCountedVotes, endQuota: currentQuota};
+    processedCoalitions.sort((a, b) => a.index - b.index);
   }
-  $: processedElection = processVotes(seats, coalitions);
-  $: processedCoalitions = processedElection.processedCoalitions as ProcessedCoalition[];
-  $: eleminatedCoalitions = processedElection.eliminatedCoalitions as Coalition[];
-  $: totalCountedVotes = processedElection.totalCountedVotes;
-  $: endQuota = processedElection.endQuota;
 
   function getSubdistrictKey(candidate: Candidate | ProcessingCandidate | ProcessedCandidate): string {
     return groups[candidate.group]?.subdistrict ?? '';
   }
 
-  function processCandidates(groups: Groups, processedCoalitions: ProcessedCoalition[]): {processedCandidates: ProcessedCandidate[], subDistrictCount: CountDict} {
+
+  let processedCandidates: ProcessedCandidate[];
+  let subDistrictCount: CountDict;
+  $: {
+    processedCandidates = [];
+    subDistrictCount = {};
+
     const groupCount: CountDict = {};
     for (let groupCode in groups) {
       groupCount[groupCode] = groups[groupCode].seats;
@@ -112,7 +119,6 @@
 
     // Prepare Candidates for Processing, Collect accumulated data
     const coalitionCount: CountDict = {};
-    const subDistrictCount: CountDict = {};
     const candidates: ProcessingCandidate[] = [];
     for (const pCoal of processedCoalitions) {
       coalitionCount[pCoal.index] = pCoal.fullSeats + pCoal.partialSeat;
@@ -135,23 +141,18 @@
     }
 
     // Process Win or Loss
-    let pCands: ProcessedCandidate[] = [];
     candidates.sort((a, b) => b.preferentialPercent - a.preferentialPercent);
     for (const candidate of candidates) {
       let lossByGoup = groupCount[candidate.group] <= 0;
       let lossByCoalition = coalitionCount[candidate.coalitionIndex] <= 0;
       let win = !lossByGoup && !lossByCoalition;
-      pCands.push({...candidate, lossByGroup: lossByGoup, lossByCoalition, win});
+      processedCandidates.push({...candidate, lossByGroup: lossByGoup, lossByCoalition, win});
       if (win) {
         groupCount[candidate.group]--;
         coalitionCount[candidate.coalitionIndex]--;
       }
     }
-    return {processedCandidates: pCands, subDistrictCount};
   }
-  $: processCandidatesResult = processCandidates(groups, processedCoalitions)
-  $: processedCandidates = processCandidatesResult.processedCandidates;
-  $: subDistrictCount = processCandidatesResult.subDistrictCount
 
   function processJson(json: Dataset) {
     groups = json.groups;
@@ -304,7 +305,7 @@
 
   <div class="border-2 border-red-400 p-3">
     <h3 class="font-bold">Eliminated Coalitions</h3>
-    {#each eleminatedCoalitions as eliminatedCoalition}
+    {#each eliminatedCoalitions as eliminatedCoalition}
     <div>{eliminatedCoalition.name}</div>
     {/each}
   </div>
@@ -378,7 +379,9 @@
     {#each processedCandidates as pCand}
     {#if !pCand.excludedByQuota || showExcluded}
     <tr class:bg-gray-100={pCand.excludedByQuota}>
-      <td class="text-right">{groups[pCand.group].name}</td>
+      <td class="text-right" class:text-red-500={groups[pCand.group] === undefined}>
+        {groups[pCand.group]?.name ?? 'Undefined'}
+      </td>
       <td><div class="coalitionbadge" style="background-color: {coalitions[pCand.coalitionIndex].color}"></div>{pCand.name}</td>
       <td class="text-right">{format(pCand.votes)}</td>
       <td class="text-right">{format(pCand.preferentialPercent)}</td>
