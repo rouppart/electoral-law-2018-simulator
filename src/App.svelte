@@ -186,6 +186,7 @@
       if (typeof event.target.result === 'string') {
         const json = JSON.parse(event.target.result);
         processJson(json);
+        selectedDistrictCode = null;
       }
     };
     f.readAsText(event.target.files[0]);
@@ -215,6 +216,14 @@
 
   .coalitionbadge {
     @apply w-3 h-3 inline-block rounded mr-2;
+  }
+
+  .coalitioncaption {
+    @apply invisible absolute rounded-md shadow-lg border border-gray-600 bg-gray-100 px-1 -mt-8;
+  }
+
+  .coalitionbadge:hover .coalitioncaption {
+    @apply visible z-50;
   }
 </style>
 
@@ -391,7 +400,11 @@
       <td class:text-red-500={groups[pCand.group] === undefined}>
         {groups[pCand.group]?.sect ?? 'Undefined'}
       </td>
-      <td><div class="coalitionbadge" style="background-color: {coalitions[pCand.coalitionIndex].color}"></div>{pCand.name}</td>
+      <td>
+        <div class="coalitionbadge" style="background-color: {coalitions[pCand.coalitionIndex].color}">
+          <span class="coalitioncaption">{coalitions[pCand.coalitionIndex].name}</span>
+        </div>{pCand.name}
+      </td>
       <td class="text-right">{format(pCand.votes)}</td>
       <td class="text-right">{format(pCand.preferentialPercent)}</td>
       <td class="text-center text-green-600">{@html pCand.win ? '&check;' : ''}</td>
