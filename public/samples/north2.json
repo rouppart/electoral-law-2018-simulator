@@ -1,34 +1,34 @@
 {
   "groups": {
     "mms": {
-      "name": "Mina - Sunni",
-      "seats": 1,
-      "subdistrict": "Mina"
+      "sect": "Sunni",
+      "subdistrict": "Mina",
+      "seats": 1
     },
     "dms": {
-      "name": "Denniye - Sunni",
-      "seats": 2,
-      "subdistrict": "Denniye"
+      "sect": "Sunni",
+      "subdistrict": "Denniye",
+      "seats": 2
     },
     "tms": {
-      "name": "Tripoli - Sunni",
-      "seats": 5,
-      "subdistrict": "Tripoli"
+      "sect": "Sunni",
+      "subdistrict": "Tripoli",
+      "seats": 5
     },
     "tal": {
-      "name": "Tripoli - Alaouite",
-      "seats": 1,
-      "subdistrict": "Tripoli"
+      "sect": "Alaouite",
+      "subdistrict": "Tripoli",
+      "seats": 1
     },
     "tma": {
-      "name": "Tripoli - Maronite",
-      "seats": 1,
-      "subdistrict": "Tripoli"
+      "sect": "Maronite",
+      "subdistrict": "Tripoli",
+      "seats": 1
     },
     "tgo": {
-      "name": "Tripoli - Greek Orthodox",
-      "seats": 1,
-      "subdistrict": "Tripoli"
+      "sect": "Greek Orthodox",
+      "subdistrict": "Tripoli",
+      "seats": 1
     }
   },
   "coalitions": [

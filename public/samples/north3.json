@@ -1,24 +1,24 @@
 {
   "groups": {
     "bma": {
-      "name": "Batroun - Maronite",
-      "seats": 2,
-      "subdistrict": "Batroun"
+      "sect": "Maronite",
+      "subdistrict": "Batroun",
+      "seats": 2
     },
     "rma": {
-      "name": "Bsharre - Maronite",
-      "seats": 2,
-      "subdistrict": "Bsharre"
+      "sect": "Maronite",
+      "subdistrict": "Bsharre",
+      "seats": 2
     },
     "zma": {
-      "name": "Zgharta - Maronite",
-      "seats": 3,
-      "subdistrict": "Zgharta"
+      "sect": "Maronite",
+      "subdistrict": "Zgharta",
+      "seats": 3
     },
     "kgo": {
-      "name": "Koura - Greek Orthodox",
-      "seats": 3,
-      "subdistrict": "Koura"
+      "sect": "Greek Orthodox",
+      "subdistrict": "Koura",
+      "seats": 3
     }
   },
   "coalitions": [

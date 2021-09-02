@@ -42,6 +42,7 @@
   }
 
   $: seats = Object.values(groups).reduce((pV, cE) => pV + cE.seats, 0);
+  $: hasSubdisctrics = !Object.values(groups).every((e) => !e.subdistrict);
   $: quotaPercent = 100 / seats;
 
   $: totalActualVotes = coalitions.reduce((pv, ce) => pv + ce.votes, 0) + white;
@@ -242,17 +243,17 @@
   <table>
     <tr>
       <th>Code</th>
-      <th>Group Name</th>
-      <th>Seats</th>
+      <th>Sect</th>
       <th>Subdistrict</th>
+      <th>Seats</th>
       <th></th>
     </tr>
     {#each Object.keys(groups) as groupCode}
       <tr>
         <td>{groupCode}</td>
-        <td><input type="text" bind:value={groups[groupCode].name}></td>
+        <td><input type="text" bind:value={groups[groupCode].sect}></td>
+        <td><input type="text" class="w-32" bind:value={groups[groupCode].subdistrict}></td>
         <td><input type="number" class="w-16 text-right" bind:value={groups[groupCode].seats}></td>
-        <td><input type="text" class="w-24" bind:value={groups[groupCode].subdistrict}></td>
         <td><button class="deletebutton" on:click={() => {delete groups[groupCode]; groups = groups}}>X</button></td>
       </tr>
     {/each}
@@ -261,7 +262,7 @@
         <input class="w-20" type="text" bind:value={groupCodeToAdd}>
       </td>
       <td colspan="3">
-        <button on:click={() => {groups[groupCodeToAdd] = {name: '', seats: 1}; groupCodeToAdd = ''}}>Add Group</button>
+        <button on:click={() => {groups[groupCodeToAdd] = {sect: '', seats: 1}; groupCodeToAdd = ''}}>Add Group</button>
       </td>
     </tr>
   </table>
@@ -368,7 +369,10 @@
 
   <table class="tableborder">
     <tr>
-      <th class="text-right">Group</th>
+      {#if hasSubdisctrics}
+      <th class="text-left">Subdistrict</th>
+      {/if}
+      <th class="text-left">Sect</th>
       <th class="text-left">Candidate Name</th>
       <th>Votes</th>
       <th>Preferrential %</th>
@@ -379,8 +383,13 @@
     {#each processedCandidates as pCand}
     {#if !pCand.excludedByQuota || showExcluded}
     <tr class:bg-gray-100={pCand.excludedByQuota}>
-      <td class="text-right" class:text-red-500={groups[pCand.group] === undefined}>
-        {groups[pCand.group]?.name ?? 'Undefined'}
+      {#if hasSubdisctrics}
+      <td class:text-red-500={groups[pCand.group] === undefined}>
+        {groups[pCand.group]?.subdistrict ?? 'Undefined'}
+      </td>
+      {/if}
+      <td class:text-red-500={groups[pCand.group] === undefined}>
+        {groups[pCand.group]?.sect ?? 'Undefined'}
       </td>
       <td><div class="coalitionbadge" style="background-color: {coalitions[pCand.coalitionIndex].color}"></div>{pCand.name}</td>
       <td class="text-right">{format(pCand.votes)}</td>

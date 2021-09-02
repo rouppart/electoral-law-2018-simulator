@@ -1,19 +1,19 @@
 {
   "groups": {
     "jma": {
-      "name": "Jbeil - Maronite",
-      "seats": 2,
-      "subdistrict": "Jbeil"
+      "sect": "Maronite",
+      "subdistrict": "Jbeil",
+      "seats": 2
     },
     "jmc": {
-      "name": "Jbeil - Shiite",
-      "seats": 1,
-      "subdistrict": "Jbeil"
+      "sect": "Shiite",
+      "subdistrict": "Jbeil",
+      "seats": 1
     },
     "kma": {
-      "name": "Keserwan - Maronite",
-      "seats": 5,
-      "subdistrict": "Keserwan"
+      "sect": "Maronite",
+      "subdistrict": "Keserwan",
+      "seats": 5
     }
   },
   "coalitions": [

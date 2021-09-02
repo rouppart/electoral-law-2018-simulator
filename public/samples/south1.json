@@ -1,19 +1,19 @@
 {
   "groups": {
     "jma": {
-      "name": "Jezzine - Maronite",
-      "seats": 2,
-      "subdistrict": "Jezzine"
+      "sect": "Maronite",
+      "subdistrict": "Jezzine",
+      "seats": 2
     },
     "jgc": {
-      "name": "Jezzine - Greek Catholic",
-      "seats": 1,
-      "subdistrict": "Jezzine"
+      "sect": "Greek Catholic",
+      "subdistrict": "Jezzine",
+      "seats": 1
     },
     "sms": {
-      "name": "Saida - Sunni",
-      "seats": 2,
-      "subdistrict": "Saida"
+      "sect": "Sunni",
+      "subdistrict": "Saida",
+      "seats": 2
     }
   },
   "coalitions": [

@@ -1,15 +1,15 @@
 {
   "groups": {
     "ma": {
-      "name": "Maronite",
+      "sect": "Maronite",
       "seats": 3
     },
     "mc": {
-      "name": "Shiite",
+      "sect": "Shiite",
       "seats": 2
     },
     "dz": {
-      "name": "Druze",
+      "sect": "Druze",
       "seats": 1
     }
   },

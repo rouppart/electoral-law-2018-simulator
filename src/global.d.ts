@@ -1,9 +1,9 @@
 /// <reference types="svelte" />
 
 interface Group {
-  name: string
-  seats: number
+  sect: string
   subdistrict?: string
+  seats: number
 }
 
 interface Groups {

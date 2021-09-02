@@ -1,19 +1,19 @@
 {
   "groups": {
     "tmc": {
-      "name": "Sour - Shiite",
-      "seats": 4,
-      "subdistrict": "Sour"
+      "sect": "Shiite",
+      "subdistrict": "Sour",
+      "seats": 4
     },
     "smc": {
-      "name": "Qora Saida - Shiite",
-      "seats": 2,
-      "subdistrict": "Qora Saida"
+      "sect": "Shiite",
+      "subdistrict": "Qora Saida",
+      "seats": 2
     },
     "sgo": {
-      "name": "Qora Saida - Greek Orthodox",
-      "seats": 1,
-      "subdistrict": "Qora Saida"
+      "sect": "Greek Orthodox",
+      "subdistrict": "Qora Saida",
+      "seats": 1
     }
   },
   "coalitions": [

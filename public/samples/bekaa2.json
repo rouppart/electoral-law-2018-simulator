@@ -1,23 +1,23 @@
 {
   "groups": {
     "go": {
-      "name": "Greek Orthodox",
+      "sect": "Greek Orthodox",
       "seats": 1
     },
     "ma": {
-      "name": "Maronite",
+      "sect": "Maronite",
       "seats": 1
     },
     "ms": {
-      "name": "Sunni",
+      "sect": "Sunni",
       "seats": 2
     },
     "mc": {
-      "name": "Shiite",
+      "sect": "Shiite",
       "seats": 1
     },
     "dz": {
-      "name": "Druze",
+      "sect": "Druze",
       "seats": 1
     }
   },

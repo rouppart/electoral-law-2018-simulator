@@ -1,19 +1,19 @@
 {
   "groups": {
     "ma": {
-      "name": "Maronite",
+      "sect": "Maronite",
       "seats": 4
     },
     "go": {
-      "name": "Greek Orthodox",
+      "sect": "Greek Orthodox",
       "seats": 2
     },
     "gc": {
-      "name": "Greek Catholic",
+      "sect": "Greek Catholic",
       "seats": 1
     },
     "ao": {
-      "name": "Armenian Orthodox",
+      "sect": "Armenian Orthodox",
       "seats": 1
     }
   },

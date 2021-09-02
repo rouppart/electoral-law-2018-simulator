@@ -18,6 +18,10 @@
 		coalition.candidates.splice(index, 1);
 		coalition.candidates = coalition.candidates;
 	}
+
+  function getGroupName(group: Group): string {
+    return (group.subdistrict ? group.subdistrict + ' - ' : '') + group.sect;
+  }
 </script>
 
 
@@ -50,7 +54,7 @@
       <select bind:value={candidate.group} class:errorborder={candidate.group === null}>
         <option value={null}>Select Group</option>
         {#each Object.keys(groups) as groupCode}
-        <option value={groupCode}>{groups[groupCode].name}</option>
+        <option value={groupCode}>{getGroupName(groups[groupCode])}</option>
         {/each}
       </select>
     </td>

@@ -1,34 +1,34 @@
 {
   "groups": {
     "bmc": {
-      "name": "Bint Jbeil - Shiite",
-      "seats": 3,
-      "subdistrict": "Bint Jbeil"
+      "sect": "Shiite",
+      "subdistrict": "Bint Jbeil",
+      "seats": 3
     },
     "nmc": {
-      "name": "Nabatieh - Shiite",
-      "seats": 3,
-      "subdistrict": "Nabatieh"
+      "sect": "Shiite",
+      "subdistrict": "Nabatieh",
+      "seats": 3
     },
     "mmc": {
-      "name": "Marjaayoun - Shiite",
-      "seats": 2,
-      "subdistrict": "Marjaayoun"
+      "sect": "Shiite",
+      "subdistrict": "Marjaayoun",
+      "seats": 2
     },
     "mdz": {
-      "name": "Marjaayoun - Druze",
-      "seats": 1,
-      "subdistrict": "Marjaayoun"
+      "sect": "Druze",
+      "subdistrict": "Marjaayoun",
+      "seats": 1
     },
     "mms": {
-      "name": "Marjaayoun - Sunni",
-      "seats": 1,
-      "subdistrict": "Marjaayoun"
+      "sect": "Sunni",
+      "subdistrict": "Marjaayoun",
+      "seats": 1
     },
     "mgo": {
-      "name": "Marjaayoun - Greek Orthodox",
-      "seats": 1,
-      "subdistrict": "Marjaayoun"
+      "sect": "Greek Orthodox",
+      "subdistrict": "Marjaayoun",
+      "seats": 1
     }
   },
   "coalitions": [

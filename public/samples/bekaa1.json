@@ -1,27 +1,27 @@
 {
   "groups": {
     "ao": {
-      "name": "Armenian Orthodox",
+      "sect": "Armenian Orthodox",
       "seats": 1
     },
     "gc": {
-      "name": "Greek Catholic",
+      "sect": "Greek Catholic",
       "seats": 2
     },
     "go": {
-      "name": "Greek Orthodox",
+      "sect": "Greek Orthodox",
       "seats": 1
     },
     "ma": {
-      "name": "Maronite",
+      "sect": "Maronite",
       "seats": 1
     },
     "ms": {
-      "name": "Sunni",
+      "sect": "Sunni",
       "seats": 1
     },
     "mc": {
-      "name": "Shiite",
+      "sect": "Shiite",
       "seats": 1
     }
   },

@@ -1,39 +1,39 @@
 {
   "groups": {
     "adz": {
-      "name": "Aley - Druze",
-      "seats": 2,
-      "subdistrict": "Aley"
+      "sect": "Druze",
+      "subdistrict": "Aley",
+      "seats": 2
     },
     "ama": {
-      "name": "Aley - Maronite",
-      "seats": 2,
-      "subdistrict": "Aley"
+      "sect": "Maronite",
+      "subdistrict": "Aley",
+      "seats": 2
     },
     "ago": {
-      "name": "Aley - Greek Orthodox",
-      "seats": 1,
-      "subdistrict": "Aley"
+      "sect": "Greek Orthodox",
+      "subdistrict": "Aley",
+      "seats": 1
     },
     "sdz": {
-      "name": "Shouf - Druze",
-      "seats": 2,
-      "subdistrict": "Shouf"
+      "sect": "Druze",
+      "subdistrict": "Shouf",
+      "seats": 2
     },
     "sms": {
-      "name": "Shouf - Sunni",
-      "seats": 2,
-      "subdistrict": "Shouf"
+      "sect": "Sunni",
+      "subdistrict": "Shouf",
+      "seats": 2
     },
     "sma": {
-      "name": "Shouf - Maronite",
-      "seats": 3,
-      "subdistrict": "Shouf"
+      "sect": "Maronite",
+      "subdistrict": "Shouf",
+      "seats": 3
     },
     "sgc": {
-      "name": "Shouf - Greek Catholic",
-      "seats": 1,
-      "subdistrict": "Shouf"
+      "sect": "Greek Catholic",
+      "subdistrict": "Shouf",
+      "seats": 1
     }
   },
   "coalitions": [
