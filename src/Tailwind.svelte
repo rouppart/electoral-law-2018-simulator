@@ -19,6 +19,17 @@
     ul {
       @apply list-disc list-inside;
     }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url('/static/SFPRODISPLAYREGULAR.OTF')
+    }
+
+    @font-face {
+      font-family: 'SF Pro Display';
+      font-weight: bold;
+      src: url('/static/SFPRODISPLAYBOLD.OTF')
+    }
   }
 
   @layer components {

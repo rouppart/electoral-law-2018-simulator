@@ -229,7 +229,8 @@
 
 <Tailwind />
 
-<header class="sticky top-0 flex flex-wrap lg:flex-nowrap justify-around items-center bg-gray-800 shadow-lg py-1">
+<header class="sticky top-0 flex flex-wrap lg:flex-nowrap justify-around items-center bg-minteshred shadow-lg py-1">
+  <a href="https://www.minteshreen.com" target="_blank"><img src="/logo.svg" alt="Minteshreen Logo"></a>
   <label>
     <span class="font-bold text-white">District:</span>
     <select class="p-1" bind:value={selectedDistrictCode}>
@@ -419,4 +420,3 @@
 
   {/if}
 </main>
-

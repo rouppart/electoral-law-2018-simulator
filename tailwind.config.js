@@ -1,11 +1,17 @@
 module.exports = {
-  mode: 'jit',
-  purge: {
-    content: ['./public/index.html', './src/**/*.svelte']
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: ['./public/index.html', './src/**/*.svelte'],
   theme: {
-    extend: {},
+    fontFamily: {
+      'sans': [
+        '"SF Pro Display"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto',
+        '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"', '"Noto Color Emoji"']
+    },
+    extend: {
+      colors: {
+        'minteshred': '#831528'
+      }
+    },
   },
   plugins: [],
 };
