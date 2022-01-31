@@ -20,6 +20,10 @@
       @apply list-disc list-inside;
     }
 
+    hr {
+      @apply w-2/3;
+    }
+
     @font-face {
       font-family: 'SF Pro Display';
       src: url('/static/SFPRODISPLAYREGULAR.OTF')

@@ -293,9 +293,24 @@
   <h2 class="text-xl mt-6">Select District or Upload Dataset</h2>
   {:else}
 
-  <div>
-    <b>Seats:</b> {seats}
-  </div>
+  <table class="tableborder">
+    <tr>
+      {#if hasSubdisctrics}<th>Subdistrict</th>{/if}
+      <th>Sect</th>
+      <th>Seats</th>
+    </tr>
+    {#each Object.values(groups) as group}
+    <tr>
+      {#if hasSubdisctrics}<td>{group.subdistrict}</td>{/if}
+      <td>{group.sect}</td>
+      <td class="text-right">{group.seats}</td>
+    </tr>
+    {/each}
+    <tr>
+      <th colspan={hasSubdisctrics ? 2 : 1}>Total Seats</th>
+      <td class="text-right">{seats}</td>
+    </tr>
+  </table>
 
   <div>
     <b>Quota %:</b> {format(quotaPercent, 2)}
@@ -314,10 +329,15 @@
     <b>Initial Quota:</b> {format(initialQuota)}
   </div>
 
+  <hr>
+
   <div class="border-2 border-red-400 p-3">
     <h3 class="font-bold">Eliminated Coalitions</h3>
     {#each eliminatedCoalitions as eliminatedCoalition}
-    <div>{eliminatedCoalition.name}</div>
+    <div>
+      <div class="coalitionbadge" style="background-color: {eliminatedCoalition.color}"></div>
+      {eliminatedCoalition.name}
+    </div>
     {/each}
   </div>
 
@@ -361,6 +381,8 @@
       </tr>
     {/each}
   </table>
+
+  <hr>
 
   <h2 class="section">Candidates</h2>
 
