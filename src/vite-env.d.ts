@@ -1,4 +1,5 @@
 /// <reference types="svelte" />
+/// <reference types="vite/client" />
 
 interface Group {
   sect: string

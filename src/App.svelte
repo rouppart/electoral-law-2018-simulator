@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Tailwind from "./Tailwind.svelte";
   import CoalitionEditor from "./components/CoalitionEditor.svelte";
 
   const districts = {
@@ -196,38 +195,6 @@
     return parseFloat(n.toFixed(digits)).toLocaleString();
   }
 </script>
-
-<style lang="postcss">
-  header * {
-    @apply my-1;
-  }
-
-  .header th {
-    @apply self-end tracking-tight;
-  }
-
-  .tableborder td, .tableborder th {
-    @apply border;
-  }
-
-  .section {
-    @apply text-xl font-bold pt-3;
-  }
-
-  .coalitionbadge {
-    @apply w-3 h-3 inline-block rounded mr-2;
-  }
-
-  .coalitioncaption {
-    @apply invisible absolute rounded-md shadow-lg border border-gray-600 bg-gray-100 px-1 -mt-8;
-  }
-
-  .coalitionbadge:hover .coalitioncaption {
-    @apply visible z-50;
-  }
-</style>
-
-<Tailwind />
 
 <header class="sticky top-0 flex flex-wrap lg:flex-nowrap justify-around items-center bg-minteshred shadow-lg py-1">
   <a href="https://www.minteshreen.com" target="_blank"><img src="/logo.svg" alt="Minteshreen Logo"></a>
@@ -442,3 +409,34 @@
 
   {/if}
 </main>
+
+
+<style lang="postcss">
+  header * {
+    @apply my-1;
+  }
+
+  .header th {
+    @apply self-end tracking-tight;
+  }
+
+  .tableborder td, .tableborder th {
+    @apply border;
+  }
+
+  .section {
+    @apply text-xl font-bold pt-3;
+  }
+
+  .coalitionbadge {
+    @apply w-3 h-3 inline-block rounded mr-2;
+  }
+
+  .coalitioncaption {
+    @apply invisible absolute rounded-md shadow-lg border border-gray-600 bg-gray-100 px-1 -mt-8;
+  }
+
+  .coalitionbadge:hover .coalitioncaption {
+    @apply visible z-50;
+  }
+</style>
