@@ -39,6 +39,7 @@ interface Coalition {
 interface ProcessedCoalition extends Coalition {
   index: number
   countedVotes: number
+  quotas: number
   fullSeats: number
   remainderVotes: number
   partialSeat: number

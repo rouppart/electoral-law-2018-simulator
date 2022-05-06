@@ -2,21 +2,21 @@
   import CoalitionEditor from "./components/CoalitionEditor.svelte";
 
   const districts = {
-    beirut1: 'Beirut 1',
-    beirut2: 'Beirut 2',
-    bekaa1: 'Bekaa 1',
-    bekaa2: 'Bekaa 2',
-    bekaa3: 'Bekaa 3',
-    mount1: 'Mount Lebanon 1',
-    mount2: 'Mount Lebanon 2',
-    mount3: 'Mount Lebanon 3',
-    mount4: 'Mount Lebanon 4',
-    north1: 'North 1',
-    north2: 'North 2',
-    north3: 'North 3',
-    south1: 'South 1',
-    south2: 'South 2',
-    south3: 'South 3'
+    b1: 'Beirut 1',
+    b2: 'Beirut 2',
+    bk1: 'Bekaa 1',
+    bk2: 'Bekaa 2',
+    bk3: 'Bekaa 3',
+    ml1: 'Mount Lebanon 1',
+    ml2: 'Mount Lebanon 2',
+    ml3: 'Mount Lebanon 3',
+    ml4: 'Mount Lebanon 4',
+    n1: 'North 1',
+    n2: 'North 2',
+    n3: 'North 3',
+    s1: 'South 1',
+    s2: 'South 2',
+    s3: 'South 3'
   }
 
   // Main Data
@@ -29,6 +29,7 @@
   let editMode: boolean = false;
   let showExcluded: boolean = false;
   let groupCodeToAdd: string = '';
+  let uploadInput: HTMLInputElement;
 
   function addCoalition() {
     const newCoalition: Coalition = {name: '', candidates: [], votes: 0, color: ''};
@@ -40,11 +41,11 @@
     coalitions = coalitions;
   }
 
-  $: seats = Object.values(groups).reduce((pV, cE) => pV + cE.seats, 0);
-  $: hasSubdisctrics = !Object.values(groups).every((e) => !e.subdistrict);
+  $: seats = Object.values(groups).reduce((p, c) => p + c.seats, 0);
+  $: hasSubdisctrics = !Object.values(groups).every(e => !e.subdistrict);
   $: quotaPercent = 100 / seats;
 
-  $: totalActualVotes = coalitions.reduce((pv, ce) => pv + ce.votes, 0) + white;
+  $: totalActualVotes = coalitions.reduce((p, c) => p + c.votes, 0) + white ?? 0;
 
   function calculateQuota(seats: number, votes: number) {
     return votes / seats;
@@ -67,6 +68,7 @@
         color: e.color,
         index: i,
         countedVotes: e.votes,
+        quotas: 0,
         fullSeats: 0,
         remainderVotes: 0,
         partialSeat: 0
@@ -85,7 +87,8 @@
         eliminatedCoalitions = [...eliminatedCoalitions, pCoal];
         endQuota = calculateQuota(seats, totalCountedVotes);
       } else {  // Since pCoals is sorted by votes, this will apply after all eliminations
-        pCoal.fullSeats = Math.floor(pCoal.votes / endQuota);
+        pCoal.quotas = pCoal.votes / endQuota;
+        pCoal.fullSeats = Math.floor(pCoal.quotas);
         pCoal.remainderVotes = pCoal.votes - pCoal.fullSeats * endQuota;
       }
     }
@@ -164,8 +167,12 @@
     if (selectedDistrictCode === null) {
       return;
     }
-    const response = await fetch('/samples/' + selectedDistrictCode + '.json');
-    processJson(await response.json());
+    try {
+      const response = await fetch('/samples/' + selectedDistrictCode + '.json');
+      processJson(await response.json());
+    } catch (_) {
+      alert('Error loading sample: ' + selectedDistrictCode);
+    }
   }
   $: loadDistrict(selectedDistrictCode);
 
@@ -181,7 +188,7 @@
 
   function uploadDataset(event: Event) {
     const f = new FileReader()
-    f.onload = (event) => {
+    f.onload = event => {
       if (typeof event.target.result === 'string') {
         const json = JSON.parse(event.target.result);
         processJson(json);
@@ -189,6 +196,14 @@
       }
     };
     f.readAsText(event.target.files[0]);
+    uploadInput.value = '';
+  }
+
+  $: { // Preloading from query params
+    const preLoad = new URLSearchParams(window.location.search).get('load');
+    if (preLoad) {
+      loadDistrict(preLoad);
+    }
   }
 
   function format(n: number, digits: number = 3) {
@@ -211,7 +226,7 @@
   <button on:click={downloadDataset}>Download Dataset</button>
   <label>
     <span class="font-bold text-white">Upload Dataset:</span>
-    <input class="bg-white" type="file" on:change={uploadDataset} accept=".json">
+    <input class="bg-white" type="file" bind:this={uploadInput} on:input={uploadDataset} accept=".json">
   </label>
 </header>
 
@@ -244,7 +259,9 @@
     </tr>
   </table>
 
-  <label class="font-bold">White Votes: <input type="number" class="w-24" bind:value={white}></label>
+  <label class="font-bold">
+    White Votes: <input type="number" class="w-24" bind:value={white}>
+  </label>
 
   {#each coalitions as coalition, index}
     <CoalitionEditor bind:coalition {groups} {index} on:deletecoalition={deleteCoalition}/>
@@ -289,7 +306,7 @@
   </div>
 
   <div>
-    <b>White Votes:</b> {format(white)}
+    <b>White Votes:</b> {format(white ?? 0)}
   </div>
 
   <div>
@@ -331,6 +348,7 @@
       <th class="text-left">Coalition Name</th>
       <th>Actual V.</th>
       <th>Counted V.</th>
+      <th>Quotas</th>
       <th>Full S.</th>
       <th>Remainder V.</th>
       <th>Partial S.</th>
@@ -341,6 +359,7 @@
         <td><div class="coalitionbadge" style="background-color: {pCoal.color}"></div>{coalitions[pCoal.index].name}</td>
         <td class="text-right">{format(coalitions[pCoal.index].votes)}</td>
         <td class="text-right" class:errortext={pCoal.countedVotes === 0}>{format(pCoal.countedVotes)}</td>
+        <td class="text-right font-bold">{format(pCoal.quotas, 2)}</td>
         <td class="text-right font-bold">{pCoal.fullSeats}</td>
         <td class="text-right">{format(pCoal.remainderVotes)}</td>
         <td class="text-right font-bold">{pCoal.partialSeat}</td>
