@@ -1,0 +1,260 @@
+{
+  "groups": {
+    "ma": {
+      "sect": "Maronite",
+      "seats": 4
+    },
+    "go": {
+      "sect": "Greek Orthodox",
+      "seats": 2
+    },
+    "gc": {
+      "sect": "Greek Catholic",
+      "seats": 1
+    },
+    "ao": {
+      "sect": "Armenian Orthodox",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Metn El 7ouriyya",
+      "votes": 21301,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Melhem Riachi",
+          "group": "gc",
+          "votes": 15254
+        },
+        {
+          "name": "Razi El Hajj",
+          "group": "ma",
+          "votes": 3459
+        },
+        {
+          "name": "Rachid Abou Jaoude",
+          "group": "ma",
+          "votes": 279
+        },
+        {
+          "name": "Hani Saliba",
+          "group": "go",
+          "votes": 1404
+        },
+        {
+          "name": "Salim El Jalekh",
+          "group": "ma",
+          "votes": 112
+        },
+        {
+          "name": "Farid Zeinoun",
+          "group": "ma",
+          "votes": 107
+        },
+        {
+          "name": "Ara Bardakjian",
+          "group": "ao",
+          "votes": 237
+        }
+      ]
+    },
+    {
+      "name": "Metniyoun Siyadiyoun",
+      "candidates": [
+        {
+          "name": "Paul Nakouzi",
+          "votes": 155,
+          "group": "ma"
+        },
+        {
+          "name": "Romanos Raad",
+          "votes": 75,
+          "group": "ma"
+        },
+        {
+          "name": "Alfred Riachi",
+          "votes": 100,
+          "group": "gc"
+        },
+        {
+          "name": "Chadi Bechara",
+          "votes": 76,
+          "group": "go"
+        },
+        {
+          "name": "Wael Sakr",
+          "votes": 11,
+          "group": "ma"
+        },
+        {
+          "name": "Shant Sarafian",
+          "votes": 29,
+          "group": "ao"
+        },
+        {
+          "name": "Charbel Abou Jaoude",
+          "votes": 166,
+          "group": "ma"
+        }
+      ],
+      "votes": 667,
+      "color": "cyan"
+    },
+    {
+      "name": "Ma3an Aqwa",
+      "votes": 15997,
+      "color": "navy",
+      "candidates": [
+        {
+          "name": "Michel El Murr",
+          "group": "go",
+          "votes": 8607
+        },
+        {
+          "name": "Hagop Pakradounian",
+          "group": "ao",
+          "votes": 4973
+        },
+        {
+          "name": "Antoine Khalil",
+          "votes": 1370,
+          "group": "ma"
+        },
+        {
+          "name": "Randa Abboud",
+          "votes": 198,
+          "group": "ma"
+        },
+        {
+          "name": "Maroun Abou Diwan",
+          "votes": 83,
+          "group": "ma"
+        },
+        {
+          "name": "Maroun Rizkalla",
+          "group": "ma",
+          "votes": 42
+        },
+        {
+          "name": "Joyce Jammal",
+          "group": "go",
+          "votes": 40
+        },
+        {
+          "name": "Lea Bou Chaaya",
+          "group": "gc",
+          "votes": 136
+        }
+      ]
+    },
+    {
+      "name": "Metn El Taghyir",
+      "votes": 22523,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Sami Gemayel",
+          "group": "ma",
+          "votes": 10466
+        },
+        {
+          "name": "Elias Hankash",
+          "group": "ma",
+          "votes": 6148
+        },
+        {
+          "name": "Mona Succar",
+          "votes": 636,
+          "group": "ma"
+        },
+        {
+          "name": "Semaan Bou Fadel",
+          "votes": 715,
+          "group": "ma"
+        },
+        {
+          "name": "Rima Fouad Njeim",
+          "votes": 364,
+          "group": "gc"
+        },
+        {
+          "name": "Samir Saliba",
+          "votes": 3219,
+          "group": "go"
+        },
+        {
+          "name": "Krikor Mardikian",
+          "votes": 211,
+          "group": "ao"
+        }
+      ]
+    },
+    {
+      "name": "Nahwa El Dawla",
+      "votes": 11555,
+      "color": "purple",
+      "candidates": [
+        {
+          "name": "Verena Al Amil",
+          "group": "ma",
+          "votes": 855
+        },
+        {
+          "name": "Lucien Bou Rjeily",
+          "group": "gc",
+          "votes": 1149
+        },
+        {
+          "name": "Miriam Jaber",
+          "group": "ma",
+          "votes": 618
+        },
+        {
+          "name": "Shaden Maalouf",
+          "group": "go",
+          "votes": 138
+        },
+        {
+          "name": "Jad Ghosn",
+          "group": "ma",
+          "votes": 8526
+        }
+      ]
+    },
+    {
+      "name": "Kenna W Ra7 Neb2a Lil Metn",
+      "votes": 20533,
+      "color": "orange",
+      "candidates": [
+        {
+          "name": "Elias Bou Saab",
+          "group": "go",
+          "votes": 4050
+        },
+        {
+          "name": "Ibrahim Kanaan",
+          "group": "ma",
+          "votes": 5513
+        },
+        {
+          "name": "Edgar Maalouf",
+          "group": "gc",
+          "votes": 10006
+        },
+        {
+          "name": "Nasri Lahoud",
+          "votes": 414,
+          "group": "ma"
+        },
+        {
+          "name": "Ricardo Malakian",
+          "votes": 80,
+          "group": "ao"
+        }
+      ]
+    }
+  ],
+  "white": 573
+}

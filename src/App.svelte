@@ -19,12 +19,15 @@
     s3: 'South 3'
   }
 
+  const years = ['2018', '2022'];
+
   // Main Data
   let groups: Groups = {};
   let coalitions: Coalition[] = [];
   let white: number = 0;
 
   // Controls
+  let selectedYear: string | null = '2022';
   let selectedDistrictCode: string | null = null;
   let editMode: boolean = false;
   let showExcluded: boolean = false;
@@ -163,18 +166,20 @@
     white = json.white;
   }
 
-  async function loadDistrict(selectedDistrictCode: string | null) {
-    if (selectedDistrictCode === null) {
+  async function loadDistrict(sampleName: string | null) {
+    if (sampleName === null) {
       return;
     }
     try {
-      const response = await fetch('/samples/' + selectedDistrictCode + '.json');
+      const response = await fetch('/samples/' + sampleName + '.json');
       processJson(await response.json());
     } catch (_) {
-      alert('Error loading sample: ' + selectedDistrictCode);
+      alert('Error loading sample: ' + sampleName);
     }
   }
-  $: loadDistrict(selectedDistrictCode);
+  $: if (selectedYear !== null && selectedDistrictCode !== null) {
+    loadDistrict(selectedYear + '_' + selectedDistrictCode);
+  }
 
   function downloadDataset() {
     const dataset: Dataset = {groups, coalitions, white};
@@ -211,22 +216,33 @@
   }
 </script>
 
-<header class="sticky top-0 flex flex-wrap lg:flex-nowrap justify-around items-center bg-minteshred shadow-lg py-1">
+<header class="sticky top-0 flex flex-wrap xl:flex-nowrap justify-around items-center bg-minteshred shadow-lg py-1">
   <a href="https://www.minteshreen.com" target="_blank"><img src="/logo.svg" alt="Minteshreen Logo"></a>
-  <label>
-    <span class="font-bold text-white">District:</span>
-    <select class="p-1" bind:value={selectedDistrictCode}>
-      <option value={null}>Select District</option>
-      {#each Object.keys(districts) as districtCode}
-      <option value={districtCode}>{districts[districtCode]}</option>
-      {/each}
-    </select>
-  </label>
+  <span>
+    <label class="mr-2">
+      <span class="font-bold text-white">Year:</span>
+      <select class="p-1" bind:value={selectedYear}>
+        <option value={null}>Select Year</option>
+        {#each years as year}
+        <option value={year}>{year}</option>
+        {/each}
+      </select>
+    </label>
+    <label>
+      <span class="font-bold text-white">District:</span>
+      <select class="p-1" bind:value={selectedDistrictCode}>
+        <option value={null}>Select District</option>
+        {#each Object.keys(districts) as districtCode}
+        <option value={districtCode}>{districts[districtCode]}</option>
+        {/each}
+      </select>
+    </label>
+  </span>
   <button on:click={() => editMode = !editMode}>{editMode ? 'View Results' : 'Edit Dataset'}</button>
   <button on:click={downloadDataset}>Download Dataset</button>
   <label>
     <span class="font-bold text-white">Upload Dataset:</span>
-    <input class="bg-white" type="file" bind:this={uploadInput} on:input={uploadDataset} accept=".json">
+    <input class="bg-white w-36" type="file" bind:this={uploadInput} on:input={uploadDataset} accept=".json">
   </label>
 </header>
 

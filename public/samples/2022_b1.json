@@ -1,0 +1,268 @@
+{
+  "groups": {
+    "ac": {
+      "sect": "Armenian Catholic",
+      "seats": 1
+    },
+    "ao": {
+      "sect": "Armenian Orthodox",
+      "seats": 3
+    },
+    "gc": {
+      "sect": "Greek Catholic",
+      "seats": 1
+    },
+    "go": {
+      "sect": "Greek Orthodox",
+      "seats": 1
+    },
+    "ma": {
+      "sect": "Maronite",
+      "seats": 1
+    },
+    "mi": {
+      "sect": "Minorities",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Lebnan El Siyade",
+      "votes": 11271,
+      "color": "navy",
+      "candidates": [
+        {
+          "name": "Nadim Gemayel",
+          "votes": 4425,
+          "group": "ma"
+        },
+        {
+          "name": "Asma Andraos",
+          "votes": 917,
+          "group": "go"
+        },
+        {
+          "name": "Najib Lyan",
+          "votes": 391,
+          "group": "gc"
+        },
+        {
+          "name": "Antoine Siryani",
+          "votes": 558,
+          "group": "mi"
+        },
+        {
+          "name": "Anni Saferian",
+          "group": "ao",
+          "votes": 227
+        },
+        {
+          "name": "Talar Markossian",
+          "votes": 43,
+          "group": "ao"
+        },
+        {
+          "name": "Leon Samerjian",
+          "votes": 208,
+          "group": "ao"
+        },
+        {
+          "name": "Jean Talouzian",
+          "votes": 4043,
+          "group": "ac"
+        }
+      ]
+    },
+    {
+      "name": "Kenna W Rah Neb2a",
+      "votes": 10950,
+      "color": "orange",
+      "candidates": [
+        {
+          "name": "Nicolas Sehnaoui",
+          "group": "gc",
+          "votes": 4781
+        },
+        {
+          "name": "Alexandre Matossian",
+          "group": "ao",
+          "votes": 2216
+        },
+        {
+          "name": "Hagop Terzian",
+          "group": "ao",
+          "votes": 2647
+        },
+        {
+          "name": "Georges Joulfakian",
+          "group": "ao",
+          "votes": 286
+        },
+        {
+          "name": "Serge Malkonian",
+          "group": "ac",
+          "votes": 95
+        },
+        {
+          "name": "Carla Boutros",
+          "group": "go",
+          "votes": 137
+        },
+        {
+          "name": "Elie El Assouad",
+          "group": "ma",
+          "votes": 303
+        },
+        {
+          "name": "Chamoun Chamoun",
+          "group": "mi",
+          "votes": 230
+        }
+      ]
+    },
+    {
+      "name": "Beirut Nehna Laha",
+      "votes": 13220,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Ghassan Hasbani",
+          "group": "go",
+          "votes": 7080
+        },
+        {
+          "name": "Jihad Pakradouni",
+          "group": "ao",
+          "votes": 2186
+        },
+        {
+          "name": "George Chehwan",
+          "votes": 1684,
+          "group": "ma"
+        },
+        {
+          "name": "Fadi Nahhas",
+          "group": "gc",
+          "votes": 200
+        },
+        {
+          "name": "Elie Sharbashi",
+          "votes": 727,
+          "group": "mi"
+        },
+        {
+          "name": "Aram Malian",
+          "group": "ao",
+          "votes": 1068
+        }
+      ]
+    },
+    {
+      "name": "Liwatani",
+      "votes": 8261,
+      "color": "cyan",
+      "candidates": [
+        {
+          "name": "Paula Yaacoubian",
+          "group": "ao",
+          "votes": 3524
+        },
+        {
+          "name": "Ziad Abs",
+          "group": "go",
+          "votes": 514
+        },
+        {
+          "name": "Ziad Abi Chaker",
+          "group": "ma",
+          "votes": 3142
+        },
+        {
+          "name": "Cynthia Zarazir",
+          "group": "mi",
+          "votes": 486
+        },
+        {
+          "name": "Magui Nanijian",
+          "group": "ao",
+          "votes": 80
+        },
+        {
+          "name": "Diana Ohanian",
+          "group": "ao",
+          "votes": 63
+        },
+        {
+          "name": "Charles Fakhoury",
+          "group": "gc",
+          "votes": 64
+        },
+        {
+          "name": "Brigette Shalbian",
+          "group": "ac",
+          "votes": 129
+        }
+      ]
+    },
+    {
+      "name": "Kadreen",
+      "votes": 1510,
+      "color": "purple",
+      "candidates": [
+        {
+          "name": "Moussa Khoury",
+          "group": "ma",
+          "votes": 91
+        },
+        {
+          "name": "Mary Jreidini",
+          "group": "go",
+          "votes": 56
+        },
+        {
+          "name": "Charbel Nahhas",
+          "group": "gc",
+          "votes": 1265
+        },
+        {
+          "name": "Roy Ibrahim",
+          "group": "mi",
+          "votes": 39
+        }
+      ]
+    },
+    {
+      "name": "Beirut Madinati",
+      "candidates": [
+        {
+          "name": "Jacques Jendo",
+          "votes": 226,
+          "group": "mi"
+        },
+        {
+          "name": "Pierre Al Gemayel",
+          "votes": 160,
+          "group": "ma"
+        },
+        {
+          "name": "Tarek Ammar",
+          "votes": 158,
+          "group": "ao"
+        },
+        {
+          "name": "Nada Sehnaoui",
+          "votes": 362,
+          "group": "gc"
+        },
+        {
+          "name": "Levon Telvezian",
+          "votes": 125,
+          "group": "ao"
+        }
+      ],
+      "votes": 1089,
+      "color": "lightgreen"
+    }
+  ],
+  "white": 395
+}

@@ -22,6 +22,10 @@
   function getGroupName(group: Group): string {
     return (group.subdistrict ? group.subdistrict + ' - ' : '') + group.sect;
   }
+
+  function focus(el: HTMLElement) {
+    el.focus();
+  }
 </script>
 
 
@@ -49,7 +53,7 @@
   </tr>
   {#each coalition.candidates as candidate, i}
   <tr>
-    <td><input type="text" bind:value={candidate.name}></td>
+    <td><input type="text" bind:value={candidate.name} use:focus></td>
     <td>
       <select bind:value={candidate.group} class:errorborder={candidate.group === null}>
         <option value={null}>Select Group</option>
