@@ -1,0 +1,307 @@
+{
+  "groups": {
+    "ao": {
+      "sect": "Armenian Orthodox",
+      "seats": 1
+    },
+    "gc": {
+      "sect": "Greek Catholic",
+      "seats": 2
+    },
+    "go": {
+      "sect": "Greek Orthodox",
+      "seats": 1
+    },
+    "ma": {
+      "sect": "Maronite",
+      "seats": 1
+    },
+    "ms": {
+      "sect": "Sunni",
+      "seats": 1
+    },
+    "mc": {
+      "sect": "Shiite",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Siyadiyoun Moustakilloun",
+      "votes": 15477,
+      "color": "lightblue",
+      "candidates": [
+        {
+          "name": "Michel Daher",
+          "group": "gc",
+          "votes": 9229
+        },
+        {
+          "name": "Omar Halbalb",
+          "group": "ms",
+          "votes": 3126
+        },
+        {
+          "name": "Samir Sader",
+          "group": "ma",
+          "votes": 1307
+        },
+        {
+          "name": "Youssef Qarqaouni",
+          "group": "go",
+          "votes": 297
+        },
+        {
+          "name": "Firas Abou Hamdan",
+          "group": "mc",
+          "votes": 585
+        },
+        {
+          "name": "Martine Demerjian",
+          "group": "ao",
+          "votes": 104
+        }
+      ]
+    },
+    {
+      "name": "Zahle El Siyada",
+      "votes": 25646,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "George Oqays",
+          "group": "gc",
+          "votes": 11921
+        },
+        {
+          "name": "Elias Estaphan",
+          "group": "go",
+          "votes": 6758
+        },
+        {
+          "name": "Bilal Hmaishi",
+          "group": "ms",
+          "votes": 3865
+        },
+        {
+          "name": "Michel El Tannouri",
+          "group": "ma",
+          "votes": 1794
+        },
+        {
+          "name": "Sabine Kassouf",
+          "group": "gc",
+          "votes": 213
+        },
+        {
+          "name": "Dima Abou Dih",
+          "votes": 225,
+          "group": "mc"
+        },
+        {
+          "name": "Pierre Demerjian",
+          "votes": 264,
+          "group": "ao"
+        }
+      ]
+    },
+    {
+      "name": "Zahle Tantafid",
+      "votes": 7713,
+      "color": "grey",
+      "candidates": [
+        {
+          "name": "Jihad Al Turk",
+          "group": "gc",
+          "votes": 258
+        },
+        {
+          "name": "Hamza Mita",
+          "group": "ms",
+          "votes": 2387
+        },
+        {
+          "name": "Amer Sabouri",
+          "group": "mc",
+          "votes": 259
+        },
+        {
+          "name": "Armin Asfahani",
+          "group": "ao",
+          "votes": 108
+        },
+        {
+          "name": "Eid Azar",
+          "group": "go",
+          "votes": 4516
+        }
+      ]
+    },
+    {
+      "name": "El Qawl Wal Fe3el",
+      "votes": 332,
+      "color": "blue",
+      "candidates": [
+        {
+          "name": "Fouad Khoury",
+          "group": "gc",
+          "votes": 100
+        },
+        {
+          "name": "Imad Chamoun",
+          "group": "ma",
+          "votes": 31
+        },
+        {
+          "name": "Omar Maalouf",
+          "group": "go",
+          "votes": 50
+        },
+        {
+          "name": "Samar Adham",
+          "group": "ms",
+          "votes": 53
+        },
+        {
+          "name": "Ali Mehdi",
+          "group": "mc",
+          "votes": 72
+        }
+      ]
+    },
+    {
+      "name": "Zahle El Risala",
+      "votes": 27872,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Rabih Assi",
+          "group": "gc",
+          "votes": 148
+        },
+        {
+          "name": "Salim Aoun",
+          "group": "ma",
+          "votes": 5554
+        },
+        {
+          "name": "Hussein Saleh",
+          "group": "ms",
+          "votes": 2465
+        },
+        {
+          "name": "Antoun Chaqih",
+          "group": "go",
+          "votes": 105
+        },
+        {
+          "name": "Rami Abou Hamdan",
+          "votes": 16539,
+          "group": "mc"
+        },
+        {
+          "name": "Kork Boushikian",
+          "votes": 2568,
+          "group": "ao"
+        }
+      ]
+    },
+    {
+      "name": "El Taghyir",
+      "candidates": [
+        {
+          "name": "Khalil Younes",
+          "votes": 99,
+          "group": "gc"
+        },
+        {
+          "name": "Rida Al Mis",
+          "votes": 1142,
+          "group": "ms"
+        },
+        {
+          "name": "Tannous Khoury",
+          "votes": 32,
+          "group": "ma"
+        },
+        {
+          "name": "Hussein El Khatib",
+          "votes": 13,
+          "group": "mc"
+        },
+        {
+          "name": "Lina Koukjian",
+          "votes": 102,
+          "group": "ao"
+        }
+      ],
+      "votes": 1440,
+      "color": "purple"
+    },
+    {
+      "name": "Qadreen Nouwajeh",
+      "candidates": [
+        {
+          "name": "Petra Samaha",
+          "votes": 628,
+          "group": "gc"
+        },
+        {
+          "name": "Rami Abou Eid",
+          "votes": 72,
+          "group": "gc"
+        },
+        {
+          "name": "Ghassan Hamims",
+          "votes": 272,
+          "group": "ma"
+        },
+        {
+          "name": "Rania El Mis",
+          "votes": 252,
+          "group": "ms"
+        }
+      ],
+      "votes": 1316,
+      "color": "darkred"
+    },
+    {
+      "name": "Al Ketle Al Shaabiye",
+      "candidates": [
+        {
+          "name": "Myriam Skaff",
+          "votes": 4825,
+          "group": "gc"
+        },
+        {
+          "name": "Mohammad Hamoud",
+          "votes": 5869,
+          "group": "ms"
+        },
+        {
+          "name": "Maroun Makhoul",
+          "votes": 317,
+          "group": "ma"
+        },
+        {
+          "name": "Sami Nabhan",
+          "votes": 274,
+          "group": "go"
+        },
+        {
+          "name": "Fawzat Dalloul",
+          "votes": 83,
+          "group": "mc"
+        },
+        {
+          "name": "Narik Ibrahimian",
+          "votes": 133,
+          "group": "ao"
+        }
+      ],
+      "votes": 12064,
+      "color": "brown"
+    }
+  ],
+  "white": 831
+}

@@ -5,13 +5,13 @@
       "subdistrict": "Sour",
       "seats": 4
     },
-    "smc": {
+    "qmc": {
       "sect": "Shiite",
       "subdistrict": "Qora Saida",
       "seats": 2
     },
-    "sgo": {
-      "sect": "Greek Orthodox",
+    "qgc": {
+      "sect": "Greek Catholic",
       "subdistrict": "Qora Saida",
       "seats": 1
     }
@@ -24,17 +24,17 @@
       "candidates": [
         {
           "name": "Nabih Berri",
-          "group": "smc",
+          "group": "qmc",
           "votes": 42137
         },
         {
           "name": "Ali Osseiran",
-          "group": "smc",
+          "group": "qmc",
           "votes": 2203
         },
         {
           "name": "Michel Moussa",
-          "group": "sgo",
+          "group": "qgc",
           "votes": 4162
         },
         {
@@ -66,12 +66,12 @@
       "candidates": [
         {
           "name": "Wissam El Hajj",
-          "group": "sgo",
+          "group": "qgc",
           "votes": 4729
         },
         {
           "name": "Riad El Assaad",
-          "group": "smc",
+          "group": "qmc",
           "votes": 1620
         },
         {

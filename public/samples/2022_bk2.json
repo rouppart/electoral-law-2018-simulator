@@ -1,0 +1,214 @@
+{
+  "groups": {
+    "go": {
+      "sect": "Greek Orthodox",
+      "seats": 1
+    },
+    "ma": {
+      "sect": "Maronite",
+      "seats": 1
+    },
+    "ms": {
+      "sect": "Sunni",
+      "seats": 2
+    },
+    "mc": {
+      "sect": "Shiite",
+      "seats": 1
+    },
+    "dz": {
+      "sect": "Druze",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Al Ghad El Afdal",
+      "votes": 28920,
+      "color": "blue",
+      "candidates": [
+        {
+          "name": "Hassan Mrad",
+          "group": "ms",
+          "votes": 9157
+        },
+        {
+          "name": "Kabalan Kabalan",
+          "group": "mc",
+          "votes": 10143
+        },
+        {
+          "name": "Elie Ferzli",
+          "group": "go",
+          "votes": 2304
+        },
+        {
+          "name": "Tarek Daoud",
+          "group": "dz",
+          "votes": 2670
+        },
+        {
+          "name": "Charbel Maroun",
+          "group": "ma",
+          "votes": 3576
+        }
+      ]
+    },
+    {
+      "name": "Bekaouna Awalan",
+      "votes": 5316,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Mohammad Kaddoura",
+          "group": "ms",
+          "votes": 70
+        },
+        {
+          "name": "Khaled El Askar",
+          "group": "ms",
+          "votes": 21
+        },
+        {
+          "name": "George Abboud",
+          "group": "go",
+          "votes": 191
+        },
+        {
+          "name": "Dany Khater",
+          "group": "ma",
+          "votes": 4761
+        },
+        {
+          "name": "Ghinwa Assaad",
+          "group": "mc",
+          "votes": 92
+        }
+      ]
+    },
+    {
+      "name": "Sahlouna Wal Jabal",
+      "votes": 11397,
+      "color": "brown",
+      "candidates": [
+        {
+          "name": "Yassine Yassine",
+          "group": "ms",
+          "votes": 6004
+        },
+        {
+          "name": "Hatem El Khoshn",
+          "group": "mc",
+          "votes": 565
+        },
+        {
+          "name": "Maguy Aoun",
+          "group": "ma",
+          "votes": 1825
+        },
+        {
+          "name": "Sally Chamie",
+          "group": "go",
+          "votes": 992
+        },
+        {
+          "name": "Baha2 Dalal",
+          "group": "dz",
+          "votes": 1609
+        }
+      ]
+    },
+    {
+      "name": "Al Qarar Al Watani Al Moustaqel",
+      "candidates": [
+        {
+          "name": "Mohammad Qaraawi",
+          "votes": 4811,
+          "group": "ms"
+        },
+        {
+          "name": "Wael Abou Faour",
+          "votes": 9202,
+          "group": "dz"
+        },
+        {
+          "name": "Ghassan El Skaff",
+          "votes": 776,
+          "group": "go"
+        },
+        {
+          "name": "Ali Abou Yassine",
+          "votes": 2928,
+          "group": "ms"
+        },
+        {
+          "name": "Abbas Eidi",
+          "votes": 294,
+          "group": "mc"
+        },
+        {
+          "name": "Jihad Zarzour",
+          "votes": 571,
+          "group": "ma"
+        }
+      ],
+      "votes": 19054,
+      "color": "lightblue"
+    },
+    {
+      "name": "Nahwa Al Taghyir",
+      "candidates": [
+        {
+          "name": "Alaa Al Shamali",
+          "votes": 57,
+          "group": "ms"
+        },
+        {
+          "name": "Chaouki Abou Ghosh",
+          "votes": 19,
+          "group": "dz"
+        },
+        {
+          "name": "Kita Ajil",
+          "votes": 86,
+          "group": "ma"
+        },
+        {
+          "name": "Amer Kaddoura",
+          "votes": 7,
+          "group": "ms"
+        }
+      ],
+      "votes": 192,
+      "color": "green"
+    },
+    {
+      "name": "Qadreen",
+      "candidates": [
+        {
+          "name": "Farah Qassem",
+          "votes": 358,
+          "group": "mc"
+        },
+        {
+          "name": "Ghada Ghanem",
+          "votes": 105,
+          "group": "ma"
+        },
+        {
+          "name": "Ousama Abou Zeid",
+          "votes": 39,
+          "group": "ms"
+        },
+        {
+          "name": "Maguy Mehanna",
+          "votes": 111,
+          "group": "dz"
+        }
+      ],
+      "votes": 653,
+      "color": "purple"
+    }
+  ],
+  "white": 616
+}

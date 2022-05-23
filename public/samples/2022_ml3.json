@@ -1,0 +1,233 @@
+{
+  "groups": {
+    "ma": {
+      "sect": "Maronite",
+      "seats": 3
+    },
+    "mc": {
+      "sect": "Shiite",
+      "seats": 2
+    },
+    "dz": {
+      "sect": "Druze",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Maan Nastati3",
+      "votes": 417,
+      "color": "brown",
+      "candidates": [
+        {
+          "name": "Abed Saade",
+          "group": "ma",
+          "votes": 104
+        },
+        {
+          "name": "Amal Abou Farhat",
+          "group": "ma",
+          "votes": 56
+        },
+        {
+          "name": "Patrick Abou Chacra",
+          "group": "ma",
+          "votes": 84
+        },
+        {
+          "name": "Bilal Alameh",
+          "group": "mc",
+          "votes": 70
+        },
+        {
+          "name": "Youssef Chaabine",
+          "group": "mc",
+          "votes": 12
+        },
+        {
+          "name": "Fadi Aawar",
+          "votes": 24,
+          "group": "dz"
+        }
+      ]
+    },
+    {
+      "name": "Wehdet Enma2 Baabda",
+      "votes": 29801,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Pierre Bou Assi",
+          "group": "ma",
+          "votes": 14756
+        },
+        {
+          "name": "Hadi Abou El Hassan",
+          "group": "dz",
+          "votes": 10767
+        },
+        {
+          "name": "Camille Chamoun",
+          "group": "ma",
+          "votes": 1876
+        },
+        {
+          "name": "Saad Salim",
+          "group": "mc",
+          "votes": 200
+        },
+        {
+          "name": "Alexandre Karam",
+          "group": "ma",
+          "votes": 1450
+        },
+        {
+          "name": "Said Alameh",
+          "votes": 81,
+          "group": "mc"
+        }
+      ]
+    },
+    {
+      "name": "Baabda Tantafid",
+      "votes": 5010,
+      "color": "blue",
+      "candidates": [
+        {
+          "name": "Jean Abi Younes",
+          "group": "ma",
+          "votes": 265
+        },
+        {
+          "name": "Khalil Helou",
+          "group": "ma",
+          "votes": 3819
+        },
+        {
+          "name": "Naim Aoun",
+          "group": "ma",
+          "votes": 566
+        },
+        {
+          "name": "Ramzy Kanj",
+          "group": "mc",
+          "votes": 228
+        }
+      ]
+    },
+    {
+      "name": "Baabda El Taghyir",
+      "candidates": [
+        {
+          "name": "Michel Helou",
+          "votes": 5483,
+          "group": "ma"
+        },
+        {
+          "name": "Robert Khalife",
+          "votes": 313,
+          "group": "ma"
+        },
+        {
+          "name": "Abir Naji",
+          "votes": 928,
+          "group": "dz"
+        },
+        {
+          "name": "Wassef El Harake",
+          "votes": 4092,
+          "group": "mc"
+        },
+        {
+          "name": "Ziad Akel",
+          "votes": 1964,
+          "group": "ma"
+        }
+      ],
+      "votes": 13201,
+      "color": "lightblue"
+    },
+    {
+      "name": "Nehna Al Taghyir",
+      "candidates": [
+        {
+          "name": "Pierre Baaklini",
+          "votes": 272,
+          "group": "ma"
+        },
+        {
+          "name": "Michel Chamoun",
+          "votes": 409,
+          "group": "ma"
+        },
+        {
+          "name": "Oussama Aour",
+          "votes": 45,
+          "group": "dz"
+        }
+      ],
+      "votes": 766,
+      "color": "green"
+    },
+    {
+      "name": "Qadreen",
+      "candidates": [
+        {
+          "name": "Rani Rajji",
+          "votes": 219,
+          "group": "ma"
+        },
+        {
+          "name": "Ali Darwiche",
+          "votes": 560,
+          "group": "mc"
+        },
+        {
+          "name": "Mohammad Sakr",
+          "votes": 56,
+          "group": "mc"
+        }
+      ],
+      "votes": 952,
+      "color": "purple"
+    },
+    {
+      "name": "El Wafaa El Watani",
+      "votes": 33962,
+      "color": "orange",
+      "candidates": [
+        {
+          "name": "Alain Aoun",
+          "group": "ma",
+          "votes": 8457
+        },
+        {
+          "name": "Ali Ammar",
+          "group": "mc",
+          "votes": 14852
+        },
+        {
+          "name": "Fadi Alame",
+          "group": "mc",
+          "votes": 4862
+        },
+        {
+          "name": "Fadi Abou Rihal",
+          "group": "ma",
+          "votes": 1773
+        },
+        {
+          "name": "Farouk Aawar",
+          "group": "dz",
+          "votes": 1037
+        },
+        {
+          "name": "Chadi Waked",
+          "votes": 2036,
+          "group": "ma"
+        }
+      ]
+    }
+  ],
+  "white": 619
+}

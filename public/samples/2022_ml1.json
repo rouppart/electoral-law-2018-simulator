@@ -1,0 +1,306 @@
+{
+  "groups": {
+    "jma": {
+      "sect": "Maronite",
+      "subdistrict": "Jbeil",
+      "seats": 2
+    },
+    "jmc": {
+      "sect": "Shiite",
+      "subdistrict": "Jbeil",
+      "seats": 1
+    },
+    "kma": {
+      "sect": "Maronite",
+      "subdistrict": "Keserwan",
+      "seats": 5
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Maakon Fina Lal Akhar",
+      "votes": 27939,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Chaouki Daccache",
+          "group": "kma",
+          "votes": 9129
+        },
+        {
+          "name": "Antoine Sfeir",
+          "group": "kma",
+          "votes": 1330
+        },
+        {
+          "name": "Karen Boustany",
+          "group": "kma",
+          "votes": 432
+        },
+        {
+          "name": "Chadi Fayad",
+          "group": "kma",
+          "votes": 2211
+        },
+        {
+          "name": "Joe Reaidy",
+          "group": "kma",
+          "votes": 117
+        },
+        {
+          "name": "Ziad Hawat",
+          "group": "jma",
+          "votes": 13078
+        },
+        {
+          "name": "Habib Barakat",
+          "group": "jma",
+          "votes": 471
+        },
+        {
+          "name": "Mahmoud Awad",
+          "group": "jmc",
+          "votes": 508
+        }
+      ]
+    },
+    {
+      "name": "Qaleb Lebnan Al Moustaqel",
+      "votes": 14979,
+      "color": "blue",
+      "candidates": [
+        {
+          "name": "Farid El Khazen",
+          "group": "kma",
+          "votes": 9056
+        },
+        {
+          "name": "Chamel Roukoz",
+          "group": "kma",
+          "votes": 623
+        },
+        {
+          "name": "Chaker Salame",
+          "group": "kma",
+          "votes": 215
+        },
+        {
+          "name": "Salim Hani",
+          "group": "kma",
+          "votes": 533
+        },
+        {
+          "name": "Toufic Salloum",
+          "group": "kma",
+          "votes": 178
+        },
+        {
+          "name": "Emile Nawfal",
+          "votes": 2413,
+          "group": "jma"
+        },
+        {
+          "name": "Tony Khairallah",
+          "votes": 455,
+          "group": "jma"
+        },
+        {
+          "name": "Ahmad Mokdad",
+          "votes": 929,
+          "group": "jmc"
+        }
+      ]
+    },
+    {
+      "name": "Sarkhet Watan",
+      "votes": 25713,
+      "color": "darkred",
+      "candidates": [
+        {
+          "name": "Neemat Frem",
+          "group": "kma",
+          "votes": 10743
+        },
+        {
+          "name": "Salim Sayegh",
+          "group": "kma",
+          "votes": 3477
+        },
+        {
+          "name": "Joly Daccache",
+          "group": "kma",
+          "votes": 769
+        },
+        {
+          "name": "Wajdi Tabet",
+          "group": "kma",
+          "votes": 1179
+        },
+        {
+          "name": "Josephine Zgheib",
+          "group": "kma",
+          "votes": 1303
+        },
+        {
+          "name": "Najwa Bassil",
+          "group": "jma",
+          "votes": 2525
+        },
+        {
+          "name": "Amir Mokdad",
+          "group": "jmc",
+          "votes": 952
+        },
+        {
+          "name": "Nawfal Nawfal",
+          "group": "jma",
+          "votes": 3211
+        }
+      ]
+    },
+    {
+      "name": "Al Hourriya Qarar",
+      "votes": 11292,
+      "color": "purple",
+      "candidates": [
+        {
+          "name": "Mansour Albon",
+          "group": "kma",
+          "votes": 5581
+        },
+        {
+          "name": "Bahjat Salame",
+          "group": "kma",
+          "votes": 42
+        },
+        {
+          "name": "Moussi Zgheib",
+          "group": "kma",
+          "votes": 53
+        },
+        {
+          "name": "Fares Soueid",
+          "group": "jma",
+          "votes": 4957
+        },
+        {
+          "name": "Assad Rashdan",
+          "group": "jma",
+          "votes": 59
+        },
+        {
+          "name": "Mashhour Ahmad",
+          "group": "jmc",
+          "votes": 246
+        }
+      ]
+    },
+    {
+      "name": "Qadreen",
+      "votes": 1926,
+      "color": "lightblue",
+      "candidates": [
+        {
+          "name": "Dominique Tarabay",
+          "group": "jma",
+          "votes": 490
+        },
+        {
+          "name": "Farah Nasser",
+          "group": "jmc",
+          "votes": 220
+        },
+        {
+          "name": "Charbel Freiha",
+          "group": "kma",
+          "votes": 261
+        },
+        {
+          "name": "Boutros Khalil",
+          "group": "kma",
+          "votes": 692
+        }
+      ]
+    },
+    {
+      "name": "Kunna W Rah Neb2a",
+      "candidates": [
+        {
+          "name": "Nada Boustany",
+          "votes": 11338,
+          "group": "kma"
+        },
+        {
+          "name": "Tony El Kreidy",
+          "votes": 413,
+          "group": "kma"
+        },
+        {
+          "name": "Rabih Zgheib",
+          "votes": 367,
+          "group": "kma"
+        },
+        {
+          "name": "Wassim Salame",
+          "votes": 1155,
+          "group": "kma"
+        },
+        {
+          "name": "Imad Azar",
+          "votes": 366,
+          "group": "kma"
+        },
+        {
+          "name": "Simon Abi Ramia",
+          "votes": 6239,
+          "group": "jma"
+        },
+        {
+          "name": "Walid El Khoury",
+          "votes": 4149,
+          "group": "jma"
+        },
+        {
+          "name": "Raed Berro",
+          "votes": 9508,
+          "group": "jmc"
+        }
+      ],
+      "votes": 34192,
+      "color": "orange"
+    },
+    {
+      "name": "Nehna Al Taghyir",
+      "candidates": [
+        {
+          "name": "Talal Mokdad",
+          "votes": 88,
+          "group": "jmc"
+        },
+        {
+          "name": "Ghassan Germanos",
+          "votes": 515,
+          "group": "jma"
+        },
+        {
+          "name": "Rania Bassil",
+          "votes": 242,
+          "group": "jma"
+        },
+        {
+          "name": "Zeina Kallab",
+          "votes": 413,
+          "group": "kma"
+        },
+        {
+          "name": "Simon Sfeir",
+          "votes": 142,
+          "group": "kma"
+        }
+      ],
+      "votes": 1681,
+      "color": "green"
+    }
+  ],
+  "white": 657
+}

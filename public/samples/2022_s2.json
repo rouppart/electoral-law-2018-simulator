@@ -1,0 +1,155 @@
+{
+  "groups": {
+    "tmc": {
+      "sect": "Shiite",
+      "subdistrict": "Sour",
+      "seats": 4
+    },
+    "qmc": {
+      "sect": "Shiite",
+      "subdistrict": "Qora Saida",
+      "seats": 2
+    },
+    "qgc": {
+      "sect": "Greek Catholic",
+      "seats": 1,
+      "subdistrict": "Qora Saida"
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Al Amal Wel Wafaa",
+      "votes": 138242,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Nabih Berri",
+          "group": "qmc",
+          "votes": 42091
+        },
+        {
+          "name": "Ali Osseiran",
+          "group": "qmc",
+          "votes": 2294
+        },
+        {
+          "name": "Michel Moussa",
+          "group": "qgc",
+          "votes": 1364
+        },
+        {
+          "name": "Hassan Ezzedine",
+          "group": "tmc",
+          "votes": 27927
+        },
+        {
+          "name": "Ali Khreis",
+          "group": "tmc",
+          "votes": 16964
+        },
+        {
+          "name": "Hussein Jashi",
+          "group": "tmc",
+          "votes": 27416
+        },
+        {
+          "name": "Anaya Ezzedine",
+          "group": "tmc",
+          "votes": 15266
+        }
+      ]
+    },
+    {
+      "name": "Al Dawla Al Hadina",
+      "votes": 7405,
+      "color": "lightblue",
+      "candidates": [
+        {
+          "name": "Hassan Khalil",
+          "group": "tmc",
+          "votes": 816
+        },
+        {
+          "name": "Bouchra Khalil",
+          "group": "tmc",
+          "votes": 2476
+        },
+        {
+          "name": "Riad El Assaad",
+          "group": "qmc",
+          "votes": 1945
+        },
+        {
+          "name": "Youssef Khalife",
+          "group": "qmc",
+          "votes": 709
+        }
+      ]
+    },
+    {
+      "name": "Maan Lil Taghyir",
+      "candidates": [
+        {
+          "name": "Hatem Halawi",
+          "votes": 1649,
+          "group": "tmc"
+        },
+        {
+          "name": "Sarah Souweidan",
+          "votes": 834,
+          "group": "tmc"
+        },
+        {
+          "name": "Mohammad Ayoub",
+          "votes": 195,
+          "group": "tmc"
+        },
+        {
+          "name": "Rou2a Fares",
+          "votes": 1088,
+          "group": "tmc"
+        },
+        {
+          "name": "Hisham Hayek",
+          "votes": 3987,
+          "group": "qgc"
+        },
+        {
+          "name": "Ali Khalife",
+          "votes": 595,
+          "group": "qmc"
+        },
+        {
+          "name": "Ayman Mrouwe",
+          "votes": 656,
+          "group": "qmc"
+        }
+      ],
+      "votes": 10061,
+      "color": "red"
+    },
+    {
+      "name": "Al Qarar Al Horr",
+      "candidates": [
+        {
+          "name": "Qassem Daoud",
+          "votes": 208,
+          "group": "tmc"
+        },
+        {
+          "name": "Daoud Faraj",
+          "votes": 320,
+          "group": "tmc"
+        },
+        {
+          "name": "Robert Kanaan",
+          "votes": 4238,
+          "group": "qgc"
+        }
+      ],
+      "votes": 5240,
+      "color": "blue"
+    }
+  ],
+  "white": 2135
+}

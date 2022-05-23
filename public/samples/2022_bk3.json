@@ -1,0 +1,305 @@
+{
+  "groups": {
+    "ma": {
+      "sect": "Maronite",
+      "seats": 1
+    },
+    "ms": {
+      "sect": "Sunni",
+      "seats": 2
+    },
+    "mc": {
+      "sect": "Shiite",
+      "seats": 6
+    },
+    "gc": {
+      "sect": "Greek Catholic",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Al Amal Wal Wafaa",
+      "votes": 154358,
+      "color": "green",
+      "candidates": [
+        {
+          "name": "Hussein Hajj Hassan",
+          "group": "mc",
+          "votes": 23120
+        },
+        {
+          "name": "Ghazi Zeaiter",
+          "group": "mc",
+          "votes": 22058
+        },
+        {
+          "name": "Ali Al Mokdad",
+          "group": "mc",
+          "votes": 20356
+        },
+        {
+          "name": "Ibrahim Al Moussaoui",
+          "group": "mc",
+          "votes": 19627
+        },
+        {
+          "name": "Ihab Hamade",
+          "group": "mc",
+          "votes": 20844
+        },
+        {
+          "name": "Jamil El Sayyed",
+          "votes": 11343,
+          "group": "mc"
+        },
+        {
+          "name": "Samer Al toum",
+          "votes": 11343,
+          "group": "gc"
+        },
+        {
+          "name": "Akid Hadchiti",
+          "votes": 4767,
+          "group": "ma"
+        },
+        {
+          "name": "Yanal Solh",
+          "votes": 8764,
+          "group": "ms"
+        },
+        {
+          "name": "Melhem Al Hujeiri",
+          "votes": 7125,
+          "group": "ms"
+        }
+      ]
+    },
+    {
+      "name": "Moustakilloun Dod Al Fasad",
+      "votes": 2819,
+      "color": "lightgreen",
+      "candidates": [
+        {
+          "name": "Hani Chamas",
+          "group": "mc",
+          "votes": 212
+        },
+        {
+          "name": "Imad Naser El Dine",
+          "group": "mc",
+          "votes": 580
+        },
+        {
+          "name": "Hassan Mazloum",
+          "group": "mc",
+          "votes": 247
+        },
+        {
+          "name": "Hussein Darwiche",
+          "group": "mc",
+          "votes": 159
+        },
+        {
+          "name": "El Sayyed Shokr",
+          "group": "mc",
+          "votes": 53
+        },
+        {
+          "name": "Ali Al Hamid",
+          "votes": 319,
+          "group": "ms"
+        },
+        {
+          "name": "Ahmad Karnabi",
+          "votes": 554,
+          "group": "ms"
+        },
+        {
+          "name": "Chaouki Al Fakhry",
+          "votes": 87,
+          "group": "ma"
+        },
+        {
+          "name": "Abdallah Aad",
+          "votes": 107,
+          "group": "gc"
+        }
+      ]
+    },
+    {
+      "name": "La2ihat Al Ashaer Wal Ailat Lil Inma2",
+      "votes": 1491,
+      "color": "purple",
+      "candidates": [
+        {
+          "name": "Moudhet Zeaiter",
+          "group": "mc",
+          "votes": 31
+        },
+        {
+          "name": "Hassan Al Masri",
+          "group": "mc",
+          "votes": 510
+        },
+        {
+          "name": "Mohammad Faliti",
+          "group": "ms",
+          "votes": 701
+        },
+        {
+          "name": "Mohammad Osman",
+          "group": "mc",
+          "votes": 36
+        },
+        {
+          "name": "Chehrazd Hamiye",
+          "group": "mc",
+          "votes": 9
+        },
+        {
+          "name": "Ali Al Moula",
+          "votes": 69,
+          "group": "ms"
+        }
+      ]
+    },
+    {
+      "name": "Qadreen",
+      "candidates": [
+        {
+          "name": "Sara Zeaiter",
+          "votes": 1082,
+          "group": "mc"
+        },
+        {
+          "name": "Mohammad Al Jabawi",
+          "votes": 171,
+          "group": "mc"
+        },
+        {
+          "name": "Daher Amhaz",
+          "votes": 70,
+          "group": "mc"
+        },
+        {
+          "name": "Michel Mehanna",
+          "votes": 461,
+          "group": "gc"
+        }
+      ],
+      "votes": 1937,
+      "color": "lightblue"
+    },
+    {
+      "name": "Bina2 Al Dawla",
+      "candidates": [
+        {
+          "name": "Abbas Al Jawhari",
+          "votes": 658,
+          "group": "mc"
+        },
+        {
+          "name": "Antoine Habchi",
+          "votes": 17000,
+          "group": "ma"
+        },
+        {
+          "name": "Ramez Amhaz",
+          "votes": 14,
+          "group": "mc"
+        },
+        {
+          "name": "Zeidan Al Hujairi",
+          "votes": 1827,
+          "group": "ms"
+        },
+        {
+          "name": "Rifaat Al Masri",
+          "votes": 62,
+          "group": "mc"
+        },
+        {
+          "name": "Saleh Al Shal",
+          "votes": 1343,
+          "group": "ms"
+        },
+        {
+          "name": "Hussein Raad",
+          "votes": 30,
+          "group": "mc"
+        },
+        {
+          "name": "Hayman Mashik",
+          "votes": 5,
+          "group": "mc"
+        },
+        {
+          "name": "Elie Al Bitar",
+          "votes": 1694,
+          "group": "gc"
+        },
+        {
+          "name": "Rashid Issa",
+          "votes": 45,
+          "group": "mc"
+        }
+      ],
+      "votes": 23308,
+      "color": "brown"
+    },
+    {
+      "name": "Etilaf Al Taghyir",
+      "candidates": [
+        {
+          "name": "Abbas Yaghi",
+          "votes": 252,
+          "group": "mc"
+        },
+        {
+          "name": "Al Sharif Sleiman",
+          "votes": 1259,
+          "group": "mc"
+        },
+        {
+          "name": "Sami Tufaili",
+          "votes": 284,
+          "group": "mc"
+        },
+        {
+          "name": "Ousama Chamas",
+          "votes": 112,
+          "group": "mc"
+        },
+        {
+          "name": "Ali Abi Raad",
+          "votes": 266,
+          "group": "mc"
+        },
+        {
+          "name": "Khaled Solh",
+          "votes": 819,
+          "group": "ms"
+        },
+        {
+          "name": "Mohammad Al Hujeiri",
+          "votes": 1518,
+          "group": "ms"
+        },
+        {
+          "name": "Talal Al Maqdisi",
+          "votes": 551,
+          "group": "gc"
+        },
+        {
+          "name": "Youssef Al Fakhry",
+          "votes": 272,
+          "group": "ma"
+        }
+      ],
+      "votes": 5633,
+      "color": "blue"
+    }
+  ],
+  "white": 1593
+}

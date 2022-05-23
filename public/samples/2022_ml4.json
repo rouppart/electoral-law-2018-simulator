@@ -1,0 +1,431 @@
+{
+  "groups": {
+    "adz": {
+      "sect": "Druze",
+      "subdistrict": "Aley",
+      "seats": 2
+    },
+    "ama": {
+      "sect": "Maronite",
+      "subdistrict": "Aley",
+      "seats": 2
+    },
+    "ago": {
+      "sect": "Greek Orthodox",
+      "subdistrict": "Aley",
+      "seats": 1
+    },
+    "sdz": {
+      "sect": "Druze",
+      "subdistrict": "Shouf",
+      "seats": 2
+    },
+    "sms": {
+      "sect": "Sunni",
+      "subdistrict": "Shouf",
+      "seats": 2
+    },
+    "sma": {
+      "sect": "Maronite",
+      "subdistrict": "Shouf",
+      "seats": 3
+    },
+    "sgc": {
+      "sect": "Greek Catholic",
+      "subdistrict": "Shouf",
+      "seats": 1
+    }
+  },
+  "coalitions": [
+    {
+      "name": "Al Shourakaa Wal Irada",
+      "votes": 83389,
+      "color": "red",
+      "candidates": [
+        {
+          "name": "Taymour Joumblat",
+          "group": "sdz",
+          "votes": 12917
+        },
+        {
+          "name": "George Adwan",
+          "group": "sma",
+          "votes": 11433
+        },
+        {
+          "name": "Marwan Hamade",
+          "group": "sdz",
+          "votes": 11121
+        },
+        {
+          "name": "Bilal Abdallah",
+          "group": "sms",
+          "votes": 8186
+        },
+        {
+          "name": "Saad Al Khatib",
+          "group": "sms",
+          "votes": 3656
+        },
+        {
+          "name": "Habboube Aoun",
+          "votes": 681,
+          "group": "sma"
+        },
+        {
+          "name": "Elie Qordahi",
+          "votes": 1914,
+          "group": "sma"
+        },
+        {
+          "name": "Fadi Al Maalouf",
+          "votes": 1482,
+          "group": "sgc"
+        },
+        {
+          "name": "Akram Chehayeb",
+          "votes": 11373,
+          "group": "adz"
+        },
+        {
+          "name": "Nazih Matta",
+          "votes": 9191,
+          "group": "ago"
+        },
+        {
+          "name": "Raji Al Saad",
+          "votes": 8503,
+          "group": "ama"
+        },
+        {
+          "name": "Joelle Faddoul",
+          "votes": 567,
+          "group": "ama"
+        }
+      ]
+    },
+    {
+      "name": "Sawtak Thawra",
+      "votes": 3438,
+      "color": "lightblue",
+      "candidates": [
+        {
+          "name": "Imad Al Hajj",
+          "group": "ama",
+          "votes": 874
+        },
+        {
+          "name": "Wassim Haidar",
+          "group": "adz",
+          "votes": 218
+        },
+        {
+          "name": "Raed Al Khalek",
+          "group": "adz",
+          "votes": 115
+        },
+        {
+          "name": "Mohammad Hajjar",
+          "group": "sms",
+          "votes": 1301
+        },
+        {
+          "name": "Samir Akoum",
+          "group": "sms",
+          "votes": 207
+        },
+        {
+          "name": "Gaby Al Kazzi",
+          "votes": 105,
+          "group": "sma"
+        },
+        {
+          "name": "Jihad Zebian",
+          "votes": 32,
+          "group": "sdz"
+        },
+        {
+          "name": "Jamal Merhej",
+          "votes": 95,
+          "group": "sma"
+        },
+        {
+          "name": "Michel Abou Sleiman",
+          "votes": 186,
+          "group": "sma"
+        },
+        {
+          "name": "Moadad Abou Ali",
+          "votes": 2,
+          "group": "sdz"
+        }
+      ]
+    },
+    {
+      "name": "Laihat Al Jabal",
+      "votes": 41545,
+      "color": "blue",
+      "candidates": [
+        {
+          "name": "Talal Erslan",
+          "group": "adz",
+          "votes": 9008
+        },
+        {
+          "name": "Cesar Abi Khalil",
+          "group": "ama",
+          "votes": 5698
+        },
+        {
+          "name": "Tarek Khairallah",
+          "group": "ago",
+          "votes": 1271
+        },
+        {
+          "name": "Antoine Boustany",
+          "group": "ama",
+          "votes": 67
+        },
+        {
+          "name": "Naji Boustany",
+          "group": "sma",
+          "votes": 2588
+        },
+        {
+          "name": "Wiam Wahab",
+          "group": "sdz",
+          "votes": 10228
+        },
+        {
+          "name": "Ghassan Atallah",
+          "votes": 5149,
+          "group": "sgc"
+        },
+        {
+          "name": "Farid Boustany",
+          "votes": 4347,
+          "group": "sma"
+        },
+        {
+          "name": "Ahmad Najem Al Dine",
+          "votes": 1432,
+          "group": "sma"
+        },
+        {
+          "name": "Oussama Maoush",
+          "votes": 435,
+          "group": "sms"
+        },
+        {
+          "name": "Antoine Abboud",
+          "votes": 273,
+          "group": "sma"
+        }
+      ]
+    },
+    {
+      "name": "Qadreen",
+      "votes": 1596,
+      "color": "purple",
+      "candidates": [
+        {
+          "name": "Nagham Halabi",
+          "group": "adz",
+          "votes": 275
+        },
+        {
+          "name": "Marwan Imad",
+          "group": "adz",
+          "votes": 330
+        },
+        {
+          "name": "Joseph Tohme",
+          "group": "sma",
+          "votes": 144
+        },
+        {
+          "name": "Ayman Zeineddine",
+          "group": "sdz",
+          "votes": 276
+        },
+        {
+          "name": "Khaled Saad",
+          "group": "sms",
+          "votes": 341
+        },
+        {
+          "name": "Imad Al Farran",
+          "votes": 20,
+          "group": "sms"
+        }
+      ]
+    },
+    {
+      "name": "Twahhadna Lil Taghyir",
+      "candidates": [
+        {
+          "name": "Ghada Eid",
+          "votes": 2982,
+          "group": "sma"
+        },
+        {
+          "name": "Najat Aoun",
+          "votes": 9332,
+          "group": "sma"
+        },
+        {
+          "name": "Zeina Ghayth",
+          "votes": 1978,
+          "group": "sdz"
+        },
+        {
+          "name": "Saoud Abou Chebel",
+          "votes": 854,
+          "group": "sma"
+        },
+        {
+          "name": "Halime Kaakour",
+          "votes": 6684,
+          "group": "sms"
+        },
+        {
+          "name": "Imad Seifeddine",
+          "votes": 1860,
+          "group": "sms"
+        },
+        {
+          "name": "Choukri Haddad",
+          "votes": 390,
+          "group": "sgc"
+        },
+        {
+          "name": "Zoya Jreidini",
+          "votes": 2084,
+          "group": "ago"
+        },
+        {
+          "name": "Mark Daou",
+          "votes": 11656,
+          "group": "adz"
+        },
+        {
+          "name": "Alaa Sayegh",
+          "votes": 1565,
+          "group": "adz"
+        },
+        {
+          "name": "Fadi Abi Alam",
+          "votes": 603,
+          "group": "ama"
+        },
+        {
+          "name": "Jad Bejjani",
+          "votes": 605,
+          "group": "ama"
+        }
+      ],
+      "votes": 42077,
+      "color": "green"
+    },
+    {
+      "name": "Siyadit Watan",
+      "candidates": [
+        {
+          "name": "Daad Al Kazzi",
+          "votes": 334,
+          "group": "sma"
+        },
+        {
+          "name": "Mohammad Al Chamaa",
+          "votes": 5119,
+          "group": "sms"
+        },
+        {
+          "name": "Joyce Maroun",
+          "votes": 32,
+          "group": "sma"
+        },
+        {
+          "name": "Maamoun Malak",
+          "votes": 279,
+          "group": "sms"
+        },
+        {
+          "name": "Hicham Zebian",
+          "votes": 79,
+          "group": "sdz"
+        },
+        {
+          "name": "George Salwan",
+          "votes": 25,
+          "group": "sma"
+        },
+        {
+          "name": "Atallah Wehbe",
+          "votes": 12,
+          "group": "adz"
+        },
+        {
+          "name": "Nabil Yazbek",
+          "votes": 36,
+          "group": "ama"
+        },
+        {
+          "name": "Walid Chahine",
+          "votes": 78,
+          "group": "ama"
+        }
+      ],
+      "votes": 6082,
+      "color": "darkred"
+    },
+    {
+      "name": "Al Jabal Yantafid",
+      "candidates": [
+        {
+          "name": "Zeina Mansour",
+          "votes": 35,
+          "group": "sdz"
+        },
+        {
+          "name": "Nabil Mchantaf",
+          "votes": 31,
+          "group": "sma"
+        },
+        {
+          "name": "Abdallah Abou Abdallah",
+          "votes": 233,
+          "group": "sma"
+        },
+        {
+          "name": "Akram Berich",
+          "votes": 26,
+          "group": "sdz"
+        },
+        {
+          "name": "Leon Sioufian",
+          "votes": 24,
+          "group": "ago"
+        },
+        {
+          "name": "Tabel George Tabet",
+          "votes": 32,
+          "group": "ama"
+        },
+        {
+          "name": "Selman Abdel Khalek",
+          "votes": 2,
+          "group": "adz"
+        },
+        {
+          "name": "Mohsen Al Aridi",
+          "votes": 30,
+          "group": "adz"
+        }
+      ],
+      "votes": 491,
+      "color": "brown"
+    }
+  ],
+  "white": 1358
+}

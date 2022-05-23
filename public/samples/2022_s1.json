@@ -1,0 +1,216 @@
+{
+  "groups": {
+    "jma": {
+      "sect": "Maronite",
+      "subdistrict": "Jezzine",
+      "seats": 2
+    },
+    "jgc": {
+      "sect": "Greek Catholic",
+      "subdistrict": "Jezzine",
+      "seats": 1
+    },
+    "sms": {
+      "sect": "Sunni",
+      "subdistrict": "Saida",
+      "seats": 2
+    }
+  },
+  "coalitions": [
+    {
+      "name": "El I3tidal Qouwetna",
+      "candidates": [
+        {
+          "name": "Ibrahim Azar",
+          "votes": 7894,
+          "group": "jma"
+        },
+        {
+          "name": "Youssef Skaff",
+          "votes": 108,
+          "group": "jgc"
+        },
+        {
+          "name": "Nabil Zaatari",
+          "votes": 3242,
+          "group": "sms"
+        }
+      ],
+      "votes": 11719,
+      "color": "red"
+    },
+    {
+      "name": "Nantakhib El Teghyir",
+      "candidates": [
+        {
+          "name": "Oussama Saad",
+          "votes": 7341,
+          "group": "sms"
+        },
+        {
+          "name": "Abdel Rahman Bizri",
+          "votes": 8526,
+          "group": "sms"
+        },
+        {
+          "name": "Charbel Massaad",
+          "votes": 984,
+          "group": "jma"
+        },
+        {
+          "name": "Camille Serhal",
+          "votes": 795,
+          "group": "jma"
+        },
+        {
+          "name": "Jamil Dagher",
+          "votes": 382,
+          "group": "jgc"
+        }
+      ],
+      "votes": 18783,
+      "color": "brown"
+    },
+    {
+      "name": "Nahnu El Teghyir",
+      "candidates": [
+        {
+          "name": "Hania El Zaatari",
+          "votes": 3028,
+          "group": "sms"
+        },
+        {
+          "name": "Mohammad El Zarif",
+          "votes": 369,
+          "group": "sms"
+        },
+        {
+          "name": "Joseph Al Asmar",
+          "votes": 570,
+          "group": "jma"
+        },
+        {
+          "name": "Sleiman Malek",
+          "votes": 424,
+          "group": "jma"
+        },
+        {
+          "name": "Robert Khoury",
+          "votes": 309,
+          "group": "jgc"
+        }
+      ],
+      "votes": 4919,
+      "color": "blue"
+    },
+    {
+      "name": "Wehdetna Fi Saida W Jezzine",
+      "candidates": [
+        {
+          "name": "Youssef Nakib",
+          "votes": 4380,
+          "group": "sms"
+        },
+        {
+          "name": "Ghada Ayyoub",
+          "votes": 7953,
+          "group": "jgc"
+        },
+        {
+          "name": "Said Al Asmar",
+          "votes": 1102,
+          "group": "jma"
+        },
+        {
+          "name": "Wissam Tawil",
+          "votes": 108,
+          "group": "jma"
+        }
+      ],
+      "votes": 13948,
+      "color": "fuchsia"
+    },
+    {
+      "name": "Sawt El Taghyir",
+      "candidates": [
+        {
+          "name": "Rana Al Tawil",
+          "votes": 79,
+          "group": "sms"
+        },
+        {
+          "name": "Mohammad Tahira",
+          "votes": 136,
+          "group": "sms"
+        },
+        {
+          "name": "Joseph Mitri",
+          "votes": 82,
+          "group": "jgc"
+        }
+      ],
+      "votes": 324,
+      "color": "grey"
+    },
+    {
+      "name": "Qadreen",
+      "candidates": [
+        {
+          "name": "Ahmad Al Assi",
+          "votes": 338,
+          "group": "sms"
+        },
+        {
+          "name": "Ismail Hafouda",
+          "votes": 40,
+          "group": "sms"
+        },
+        {
+          "name": "Emilio Matar",
+          "votes": 210,
+          "group": "jma"
+        },
+        {
+          "name": "Elie Abou Tass",
+          "votes": 442,
+          "group": "jma"
+        }
+      ],
+      "votes": 1128,
+      "color": "purple"
+    },
+    {
+      "name": "Maan Li Saida W Jezzine",
+      "candidates": [
+        {
+          "name": "Ziad Aswad",
+          "votes": 3639,
+          "group": "jma"
+        },
+        {
+          "name": "Amal Abou Zeid",
+          "votes": 5184,
+          "group": "jma"
+        },
+        {
+          "name": "Salim Khoury",
+          "votes": 447,
+          "group": "jgc"
+        },
+        {
+          "name": "Ali Ammar",
+          "votes": 77,
+          "group": "sms"
+        },
+        {
+          "name": "Mohammad Al Qowais",
+          "votes": 165,
+          "group": "sms"
+        }
+      ],
+      "votes": 9846,
+      "color": "darkred"
+    }
+  ],
+  "white": 623
+}
